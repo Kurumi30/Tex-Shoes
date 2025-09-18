@@ -1,12 +1,10 @@
 /* Importei do google fonts*/
-@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Parkinsans:wght@300..800&family=Poppins:ital,wght@0400;0,500;0,600;0,700;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
 
 *{  
-margin: 0;
- font-weight: 100;
+ margin: 0;
  padding: 0;
  box-sizing: border-box;
- font-family: 0;
  font-family: "Poppins", sans-serif;
 }
 
@@ -17,7 +15,7 @@ margin: 0;
     --primary-color: #3b141c;
     --secondary-color: #f3961c;
     --light-pink-color: #faf4f5;
-    --medium-gray-coor: #ccc;
+    --medium-gray-color: #ccc;
 
     /* Font-size */
     --font-size-s: 0.9rem;
@@ -25,7 +23,7 @@ margin: 0;
     --font-size-m: 1.12rem;
     --font-size-l: 1.5rem;
     --font-size-xl: 2rem;
-    --font-size-xl: 2.3rem;
+    --font-size-xxl: 2.3rem;
 
     /* Font weight*/
     --font-weight-normal: 400;
@@ -41,7 +39,7 @@ margin: 0;
 
     /* Site max widht */
 
-    --site-max-widht: 1300px;
+    --site-max-width: 1300px;
     
 
 }
@@ -68,13 +66,17 @@ img {
 .section-content {
     margin: 0 auto;
     padding: 0 20px;
-    max-width: var(--site-max-widht);
+    max-width: var(--site-max-width);
 }
 
 /* Navbar styling */
 
 header {
+    z-index: 5;
+    width: 100%;
+    position: fixed;
     background: var(--primary-color);
+
 
 }
 
@@ -84,6 +86,7 @@ header .navbar {
     padding: 20px;
     align-items: center;
     justify-content: space-between;
+    font-weight: normal;
 }
 
 .navbar .nav-logo .logo-text {
@@ -103,7 +106,7 @@ header .navbar {
    color: var(--white-color);
    font-size: var(--font-size-m);
    border-radius: var(--border-radius-m);
-   transition: 0.3 ease;
+   transition: 0.3s ease;
 } 
 
 .navbar .nav-menu .nav-link:hover {
@@ -111,3 +114,63 @@ header .navbar {
     border-radius: var(--border-radius-m);
 } 
       
+
+.hero-section {
+     min-height: 100vh;
+     background: var(--primary-color);
+}
+
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+.hero-section .hero-details .title {
+    font-size: var(--font-size-xxl);
+    color: var(--secondary-color);
+    font-family: "Miniver", sans-serif;
+}
+
+.hero-section .hero-details .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-semibold);
+}
+
+.hero-section .hero-details .descriptions {
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: var(--font-size-m);
+
+}
+
+.hero-section .hero-details .buttons {
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-details .buttons:hover {
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+.hero-section .hero-details .button {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+    transition: 0.3s ease;
+}
+
+.hero-section .hero-image-wrapper {
+    max-width: 500px;
+    margin-right: 30px;
+}
+ 
