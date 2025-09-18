@@ -82,11 +82,11 @@ header {
 
 header .navbar {
     display: flex;
-    font-weight: none;
     padding: 20px;
     align-items: center;
+    margin: 0 auto;
     justify-content: space-between;
-    font-weight: normal;
+    max-width: var(--site-max-width);
 }
 
 .navbar .nav-logo .logo-text {
@@ -96,13 +96,13 @@ header .navbar {
 }
 
 .navbar .nav-menu {
-    display: flex;
     gap: 10px;
+    display: flex;
+    
 }
 
 .navbar .nav-menu .nav-link {
    padding: 10px 18px;
-   background: var(--secondary-color);
    color: var(--white-color);
    font-size: var(--font-size-m);
    border-radius: var(--border-radius-m);
@@ -110,8 +110,8 @@ header .navbar {
 } 
 
 .navbar .nav-menu .nav-link:hover {
-     color: var(--primary-color);
-    border-radius: var(--border-radius-m);
+    color: var(--primary-color);
+    border-radius: var(--secondary-color);
 } 
       
 
@@ -122,10 +122,14 @@ header .navbar {
 
 .hero-section .section-content {
     display: flex;
+    padding-top: 40px;
     align-items: center;
     min-height: 100vh;
-    color: var(--white-color);
     justify-content: space-between;
+}
+
+.hero-section .hero-details {
+  color: var(--white-color);
 }
 
 .hero-section .hero-details .title {
