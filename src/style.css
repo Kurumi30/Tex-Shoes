@@ -157,12 +157,6 @@ header .navbar {
     gap: 23px;
 }
 
-.hero-section .hero-details .buttons:hover {
-    color: var(--white-color);
-    border-color: var(--white-color);
-    background: transparent;
-}
-
 .hero-section .hero-details .button {
     padding: 10px 26px;
     border: 2px solid transparent;
@@ -171,6 +165,20 @@ header .navbar {
     background: var(--secondary-color);
     font-weight: var(--font-weight-medium);
     transition: 0.3s ease;
+}
+
+.hero-section .hero-details .buttons:hover,
+.hero-section .hero-details .contact-us {
+
+    color: var(--white-color);
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+.hero-section .hero-details .contact-us:hover {
+     color: var(--white-color);
+    border-color: var(--primary-color);
+    background: red;
 }
 
 .hero-section .hero-image-wrapper {
