@@ -159,26 +159,28 @@ header .navbar {
 
 .hero-section .hero-details .button {
     padding: 10px 26px;
+    display: block;
     border: 2px solid transparent;
-    color: var(--primary-color);
     border-radius: var(--border-radius-m);
     background: var(--secondary-color);
+    color: var(--primary-color);
+    font-size: var(--font-size-m);
     font-weight: var(--font-weight-medium);
     transition: 0.3s ease;
 }
 
 .hero-section .hero-details .buttons:hover,
-.hero-section .hero-details .contact-us {
+.hero-section .hero-details .contact-us  {
 
     color: var(--white-color);
     border-color: var(--white-color);
     background: transparent;
 }
 
-.hero-section .hero-details .contact-us:hover {
-     color: var(--white-color);
-    border-color: var(--primary-color);
-    background: red;
+.hero-section .hero-details .button.contact-us:hover {
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
 }
 
 .hero-section .hero-image-wrapper {
@@ -186,3 +188,24 @@ header .navbar {
     margin-right: 30px;
 }
  
+@media screen and (max-width: 900px) {
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background: var(--white-color);
+    }
+ .navbar .nav-menu .nav-link {
+    display: block;
+    margin-top: 17px;
+    color: var(--dark-color);
+    font-size: var(--font-size-l);
+  }
+}
