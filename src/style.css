@@ -63,7 +63,7 @@ img {
     width: 100%;
 }
 
-.section-content {
+:where(section, footer) .section-content {
     margin: 0 auto;
     padding: 0 20px;
     max-width: var(--site-max-width);
@@ -111,7 +111,7 @@ header .navbar {
 
 .navbar .nav-menu .nav-link:hover {
     color: var(--primary-color);
-    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
 } 
 
 .navbar :where(#menu-opne-button, #menu-close-button) {
@@ -124,7 +124,7 @@ header .navbar {
 }
 
 .hero-section .section-content {
-    display: column;
+    display: flex;
     padding-top: 40px;
     align-items: center;
     min-height: 100vh;
@@ -203,16 +203,27 @@ color: var(--white-color);
 
 
 .hero-section .hero-image-wrapper {
-    max-width: 500px;
-    margin-right: 30px;
+    max-width: 300px;
+    margin-right: 20px;
 }
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) {
 
     :root {
     --font-size-m: 1rem;
     --font-size-l: 1.3rem;
     --font-size-xl: 1.5rem;
     --font-size-xxl: 1.8rem;
+    }
+
+    body.show-mobile-menu header::before {
+        content: "";
+        position: fixed;
+        left: 0;
+        right: 0;
+        height: 100%;
+        width: 100%;
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, 0.2);
     }
 
     .navbar :where(#menu-close-button, #menu-open-button) {
@@ -314,25 +325,24 @@ color: var(--white-color);
 
     /* HERO SECTION - responsivo */
     .hero-section .section-content {
-        flex-direction: column;
+        gap: 50px;
         text-align: center;
-        padding-top: 100px;
-        gap: 40px;
+        padding: 30px 20px 20px;
+        flex-direction: column-reverse;
+        text-align: center;
+        
     }
-
-    .hero-section .hero-details .subtitle,
-    .hero-section .hero-details .descriptions {
+ 
+    .hero section .hero-details :is(.subtitle, .description) {
         max-width: 100%;
-        margin: 0 auto;
-    }
-
-    .hero-section .hero-details .buttons {
-        flex-direction: column;
-        align-items: center;
     }
 
     .hero-section .hero-image-wrapper {
-        margin: 0;
-        max-width: 90%;
+        max-width: 270px;
+        margin-top: 0;
+    }
+
+    .hero-section .hero-details .buttons {
+        justify-content: center;
     }
 }
