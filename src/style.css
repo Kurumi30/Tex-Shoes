@@ -127,7 +127,7 @@ header .navbar {
   display: none;
 }
 
-/* Hero section */
+/* Hero section estilo*/
 .hero-section {
   min-height: 100vh;
   background: var(--primary-color);
@@ -139,6 +139,7 @@ header .navbar {
   align-items: center;
   min-height: 100vh;
   justify-content: space-between;
+  flex-direction: row; /* Para desktop */
 }
 
 .hero-section .hero-details {
@@ -166,8 +167,7 @@ header .navbar {
 
 .hero-section .hero-details .buttons {
   display: flex;
-  gap: 23px;
-  justify-content: flex-start;
+  gap: 23px;  
 }
 
 .hero-section .hero-details .button {
@@ -182,10 +182,11 @@ header .navbar {
   transition: 0.3s ease;
 }
 
-.hero-section .hero-details .button:hover {
+.hero-section .hero-details .button:hover,
+.hero-section .hero-details .button.contact-us {
   color: var(--white-color);
-  background: transparent;
   border-color: var(--dark-color);
+   background: transparent;
 }
 
 .hero-section .hero-details .button.order-now:hover {
@@ -201,7 +202,7 @@ header .navbar {
 
 .hero-section .hero-image-wrapper {
   max-width: 500px;
-  margin-right: 20px;
+  margin-right: 30px;
 }
 
 /* About section */
@@ -224,8 +225,43 @@ header .navbar {
   border-radius: var(--border-radius-circle);
 }
 
+.about-section  .about-details {
+   max-width: 50%;
+}
+
+.about-section  .about-details .section-title {
+  padding: 0;
+}
+
+.about-section  .about-details .text {
+  line-height: 30px;
+  margin: 50px 0 30px;
+  text-align: center;
+  font-size: var(--font-size-m);
+
+}
+
+.about-section  .social-link-list {
+  display: flexbox;
+  gap: 25px;
+  justify-content: center;
+}
+
+/* Codigo que da animação ao botão do facebook, instagram e twitter */
+.about-section  .social-link-list .social-link {
+  color: var(--primary-color);
+  font-size: var(--font-size-l);
+  transition: 0.2s ease;
+}
+
+/* Codigo que da animação ao botão do facebook, instagram e twitter */
+.about-section  .social-link-list .social-link:hover {
+  color: var(--secondary-color);
+
+}
+
 /* Responsivo 1200px e abaixo */
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 900px) {
   :root {
     --font-size-m: 1rem;
     --font-size-l: 1.3rem;
@@ -239,6 +275,7 @@ header .navbar {
 
   body.show-mobile-menu header::before {
     content: "";
+    content: '';
     position: fixed;
     top: 0;
     left: 0;
@@ -295,8 +332,8 @@ header .navbar {
 /* Responsivo 900px e abaixo */
 @media screen and (max-width: 900px) {
   .hero-section .section-content {
-    flex-direction: column-reverse;
-    gap: 50px;
+    flex-direction: column;
+    gap: 30px;
     text-align: center;
     padding: 30px 20px 20px;
     justify-content: center;
@@ -307,12 +344,17 @@ header .navbar {
     max-width: 100%;
   }
 
-  .hero-section .hero-image-wrapper {
-    max-width: 270px;
-    margin-right: 0;
-  }
-
   .hero-section .hero-details .buttons {
     justify-content: center;
   }
+
+  .hero-section .hero-image-wrapper   {
+    max-width: 270px;
+    margin-right: 0 auto 20px;
+  }
+
+  .about-section .section-content {
+    flex-direction: column-reverse;
+  }
+  
 }
