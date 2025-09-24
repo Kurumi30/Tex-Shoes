@@ -78,8 +78,8 @@ img {
   height: 5px;
   display: block;
   margin: 10px auto 0;
-  background: var(--secondary-color);
   border-radius: var(--border-radius-s);
+  background: var(--secondary-color);
 }
 
 /* Navbar styling */
@@ -186,7 +186,7 @@ header .navbar {
 .hero-section .hero-details .button.contact-us {
   color: var(--white-color);
   border-color: var(--dark-color);
-   background: transparent;
+  background: transparent;
 }
 
 .hero-section .hero-details .button.order-now:hover {
@@ -225,12 +225,12 @@ header .navbar {
   border-radius: var(--border-radius-circle);
 }
 
-.about-section  .about-details {
-   max-width: 50%;
-}
-
 .about-section  .about-details .section-title {
   padding: 0;
+}
+
+.about-section .about-details .section-title{
+  max-width: 50%;
 }
 
 .about-section  .about-details .text {
@@ -350,11 +350,19 @@ header .navbar {
 
   .hero-section .hero-image-wrapper   {
     max-width: 270px;
-    margin-right: 0 auto 20px;
+    margin-right: 0;
   }
 
   .about-section .section-content {
+    gap: 70px;
     flex-direction: column-reverse;
   }
   
+  .about-section .about-image-wrapper .about-image {
+    width: 100%;
+    height: 100%;
+    max-width: 250px;
+    aspect-ratio: 1;
+  }
+
 }
