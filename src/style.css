@@ -340,7 +340,7 @@ header .navbar {
   }
 
   .hero-section .hero-details :is(.subtitle, .descriptions),
-  .about-section .about-details {
+  .about-section .about-details .about-section .about-details{
     max-width: 100%;
   }
 
@@ -355,7 +355,7 @@ header .navbar {
 
   .about-section .section-content {
     gap: 70px;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   
   .about-section .about-image-wrapper .about-image {
