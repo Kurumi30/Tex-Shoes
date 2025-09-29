@@ -4,10 +4,14 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coffee Website</title>
+
+      <!--- Linking Font Awesome for icons-->
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!--Link Swiper CSS-->
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -76,13 +80,14 @@
       </section>
 
       <!---About section-->
-      <section class="about-section">
+      <section class="about-section" id="about">
         <div class="section-content">
           <div class="about-image-wrapper">
-            <img src="images/about-image.jpg" alt="about" class="about-image">
+            <img src="images/about-image.jpg" alt="About" class="about-image">
           </div>
           <div class="about-details">
             <h2 class="section-title">About Us</h2>
+
             <p class="text">At Coffee House in Bermdorf, Germany, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike. We're dedicated to prviding on exceptional coffee experience in a cazy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in comfort. </p>
             <div class="social-link-list">
               <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
@@ -141,50 +146,55 @@
       </section>
 
       <!---Testimonials section --->
-      <section class="testimonials-section">
+      <section class="testimonials-section" id="testimonials">
         <h2 class="section-title">Testimonials</h2>
         <div class="section-content">
-          <div class="slider-container">
+          <div class="slider-container swiper">
             <div class="slider-wrapper">
-              
-              <ul class="Testimonials-list">
+              <ul class="testimonials-list swiper-wrapper">
+
+              <li class="testimonial swiper-slide">
                 <img src="images/user-1.jpg" alt="User" class="user-image">
                 <h3 class="name">Sarah Johnson</h3>
                 <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order again!"</i>
-              </ul>
-
-              <ul class="Testimonials-list">
+              </li>
+              <li class="testimonial swiper-slide">
                 <img src="images/user-2.jpg" alt="User" class="user-image">
                 <h3 class="name">James Wilson</h3>
                 <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
-              </ul>
-
-              <ul class="Testimonials-list">
+              </li>
+              <li class="testimonial swiper-slide">
                 <img src="images/user-3.jpg" alt="User" class="user-image">
                 <h3 class="name">Michael Brown</h3>
                 <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</i>
-              </ul>
-
-              <ul class="Testimonials-list">
+              </li>
+              <li class="testimonial swiper-slide">
                 <img src="images/user-4.jpg" alt="User" class="user-image">
                 <h3 class="name">Emily Harris</h3>
                 <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend."</i>
-              </ul>
-
-              <ul class="Testimonials-list">
+              </li>
+              <li class="testimonial swiper-slide">
                 <img src="images/user-5.jpg" alt="User" class="user-image">
                 <h3 class="name">Anthony Thompson</h3>
                 <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."</i>
-              </ul>
+              </li>
+            </ul>
 
+            <div class="swiper-pagination"></div>
+              <div class="swiper-slide-button swiper-button-prev"></div>
+              <div class="swiper-slide-button swiper-button-next"></div>
             </div>
           </div>
         </div>
       </section>
 
 
-    </main>
 
+   <!-- Linking Swiper script -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
+  <!-- Linking custom script -->
     <script src="script.js"></script>
+    
   </body>
 </html>

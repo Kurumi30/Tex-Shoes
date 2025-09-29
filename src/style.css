@@ -139,7 +139,6 @@ header .navbar {
   align-items: center;
   min-height: 100vh;
   justify-content: space-between;
-  flex-direction: row; /* Para desktop */
 }
 
 .hero-section .hero-details {
@@ -159,7 +158,7 @@ header .navbar {
   font-weight: var(--font-weight-semibold);
 }
 
-.hero-section .hero-details .descriptions {
+.hero-section .hero-details .description {
   max-width: 70%;
   margin: 24px 0 40px;
   font-size: var(--font-size-m);
@@ -206,6 +205,7 @@ header .navbar {
 }
 
 /* About section */
+
 .about-section {
   padding: 120px 0;
   background: var(--light-pink-color);
@@ -225,12 +225,12 @@ header .navbar {
   border-radius: var(--border-radius-circle);
 }
 
-.about-section  .about-details .section-title {
-  padding: 0;
-}
-
 .about-section .about-details .section-title{
   max-width: 50%;
+}
+
+.about-section  .about-details {
+  padding: 0;
 }
 
 .about-section  .about-details .text {
@@ -242,7 +242,7 @@ header .navbar {
 }
 
 .about-section  .social-link-list {
-  display: flexbox;
+  display: flex;
   gap: 25px;
   justify-content: center;
 }
@@ -270,17 +270,17 @@ header .navbar {
 
 .menu-section .menu-list {
   display: flex;
-  flex-wrap: wrap;
   gap: 110px;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
 
 .menu-section .menu-list .menu-item {
   display: flex;
-  align-items: center;
   text-align: center;
   flex-direction: column;
+  align-items: center;
   justify-content: space-between;
   width: calc(100% / 3 - 110px); /* Deixa o cardapio organizado */
 }
@@ -310,16 +310,52 @@ header .navbar {
   background: var(--light-pink-color);
 }
 
-.testimonials-section .testimonials{
-  display: flex;
-  flex-direction: column;
+.testimonials-section .slider-wrapper {
+  overflow: hidden;
+  margin: 0 60px 50px;
 }
 
-.testimonials-section .testimonials .user-image {
+.testimonials-section .testimonial {
+  user-select: none;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;  
+}
+
+.testimonials-section .testimonial .user-image {
   width: 180px;
   height: 180px;
+  margin-bottom: 50px;
   object-fit: cover;
   border-radius: var(--border-radius-circle);
+}
+
+.testimonials-section .testimonials .name {
+ margin-bottom: 16px;
+ font-size: var(--font-size-m);
+}
+
+.testimonials-section .testimonials .feedback {
+  line-height: 25px;
+}
+
+.testimonials-section .swiper-pagination-bullet {
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+  background: blue;
+}
+
+.testimonials-section .swiper-slide-button {
+  color: var(--secondary-color);
+  margin-top: -50px;
+  transition: 0.3s ease;
+}
+
+.testimonials-section .swiper-slide-button:hover {
+  color: var(--primary-color);
 }
 
 @media screen and (max-width: 900px) {
