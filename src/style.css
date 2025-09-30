@@ -398,6 +398,21 @@ header .navbar {
   width: calc(100% /2 - 30px);
 }
 
+/* Contact us section styling */
+.contact-section {
+  padding: 50px 0 100px;
+  background: var(--light-pink-color);
+}
+
+.contact-section .section-content {
+  display: flex;
+  gap: 48px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+
+
 /* Responsive media query code for max width 900px */
 @media screen and (max-width: 900px) {
   :root {
