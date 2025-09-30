@@ -351,8 +351,8 @@ header .navbar {
 }
 
 .testimonials-section .swiper-slide-button {
-  margin-top: -50px;
   color: var(--secondary-color);
+  margin-top: -50px;
   transition: 0.3s ease;
 }
 
@@ -396,19 +396,6 @@ header .navbar {
 
 .gallery-section .gallery-list .gallery-item {
   width: calc(100% /2 - 30px);
-}
-
-/* Responsive media query code for max width 1024px */
-@media screen and (max-width: 1024px) {
-
-.menu-section .menu-list {
-  gap: 60px;
-}
-
-.menu-section .menu-list .menu-item {
-  width: calc(100% / 3 - 60px);
-  }
-
 }
 
 /* Responsive media query code for max width 900px */
@@ -496,6 +483,20 @@ header .navbar {
 
   }
 }
+
+/* Responsive media query code for max width 1024px */
+@media screen and (max-width: 1024px) {
+
+.menu-section .menu-list {
+  gap: 60px;
+}
+
+.menu-section .menu-list .menu-item {
+  width: calc(100% / 3 - 60px);
+  }
+
+}
+
 
 @media screen and (max-width: 900px) {
   .hero-section .section-content {
