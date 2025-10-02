@@ -40,6 +40,10 @@
   --site-max-width: 1300px;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* Global styles */
 ul {
   list-style: none;
@@ -323,13 +327,13 @@ header .navbar {
 .testimonials-section .testimonial {
   user-select: none;
   padding: 35px;
-  display: flex;
-  flex-direction: column;
+  text-align: center;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  
 }
 .testimonials-section .testimonial .user-image {
+  user-select: none;
   width: 180px;
   height: 180px;
   margin-bottom: 50px;
@@ -449,6 +453,37 @@ header .navbar {
 .contact-section .contact-form .submit-button:hover {
   color: var(--primary-color);
   background: red;
+}
+
+/* Footer section styling */
+
+.footer-section {
+  padding: 20px 0;
+  background: var(--dark-color);
+}
+.footer-section .section-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-section :where(.copyright-text, .social-link, .policy-link, 
+.footer-section .policy-text .policy-link:hover) {
+  color: var(--white-color);
+  transition: 0.2s ease 
+}
+
+.footer-section .social-link-list {
+  display: flex;
+  gap: 25px;
+}
+
+.footer-section .social-link-list .social-link:hover {
+  color: var(--secondary-color);
+} 
+
+.footer-section .policy-text .separator {
+  margin: 0 5px;
+  color: var(--white-color);
 }
 
 /* Responsive media query code for max width 900px */
@@ -580,7 +615,7 @@ header .navbar {
 
   .about-section .section-content {
     gap: 70px;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   
   .about-section .about-image-wrapper .about-image {
@@ -610,6 +645,11 @@ header .navbar {
 
   .testimonials-section .swiper-slide-button {
     display: none;
+  }
+
+  .footer-section .section-content {
+    flex-direction: column;
+    gap: 20px;
   }
 
 }

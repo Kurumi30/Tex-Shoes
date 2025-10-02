@@ -1,3 +1,4 @@
+const navLinks = document.querySelectorAll(".nav-menu .nav-link");
 const menuOpenButton = document.querySelector("#menu-open-button");
 const menuCloseButton = document.querySelector("#menu-close-button");
 
@@ -10,6 +11,11 @@ menuOpenButton.addEventListener("click", () => {
 menuCloseButton.addEventListener("click", () => menuOpenButton.click());
 
 
+// nav link is clicked, isso serve para quando clicar nas 3 barras do canto direito ele sair do menu sem ficar preso. 
+
+navLinks.forEach(link => {
+ link.addEventListener("click", () => menuOpenButton.click());
+});
 
 
 //Initializing Swiper
