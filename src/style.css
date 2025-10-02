@@ -464,6 +464,7 @@ header .navbar {
 .footer-section .section-content {
   display: flex;
   align-items: center;
+  color: var(--white-color);
   justify-content: space-between;
 }
 .footer-section :where(.copyright-text, .social-link, .policy-link, 
@@ -485,6 +486,7 @@ header .navbar {
   margin: 0 5px;
   color: var(--white-color);
 }
+
 
 /* Responsive media query code for max width 900px */
 @media screen and (max-width: 900px) {
@@ -588,7 +590,6 @@ header .navbar {
   }
 
 }
-
 
 @media screen and (max-width: 900px) {
   .hero-section .section-content {
