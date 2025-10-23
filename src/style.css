@@ -142,7 +142,7 @@ header .navbar {
   padding-top: 40px;
   align-items: center;
   min-height: 100vh;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .hero-section .hero-details {
@@ -204,7 +204,7 @@ header .navbar {
 }
 
 .hero-section .hero-image-wrapper {
-  max-width: 500px;
+  max-width: 250px;
   margin-right: 30px;
 }
 
@@ -273,12 +273,12 @@ header .navbar {
 .menu-section {
   color: var(--white-color);
   background: var(--dark-color);
-  padding: 50px 0 100px;
+  padding: 50px 100px;
 }
 
 .menu-section .menu-list {
   display: flex;
-  gap: 110px;
+  gap: 100px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
@@ -294,7 +294,7 @@ header .navbar {
 }
 
 .menu-section .menu-list .menu-item .menu-image {
-  max-width: 83%;
+  max-width: 100%;
   aspect-ratio: 1;
   margin-bottom: 15px;
   object-fit: contain; /* Redimensiona o conteudo dentro do bloco */
