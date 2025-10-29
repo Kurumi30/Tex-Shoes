@@ -1,53 +1,73 @@
-const navLinks = document.querySelectorAll(".nav-menu .nav-link");
-const menuOpenButton = document.querySelector("#menu-open-button");
-const menuCloseButton = document.querySelector("#menu-close-button");
+document.addEventListener('DOMContentLoaded', () => {
+  const menuToggle = document.getElementById('menu-toggle')
+  const navMenu = document.getElementById('nav-menu')
 
-menuOpenButton.addEventListener("click", () => {
-    // Toggle mobile menu visibility 
-    document.body.classList.toggle("show-mobile-menu");
-});
+  if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+      navMenu.classList.toggle('active')
 
-// Close menu button
-menuCloseButton.addEventListener("click", () => menuOpenButton.click());
-
-
-// nav link is clicked, isso serve para quando clicar nas 3 barras do canto direito ele sair do menu sem ficar preso. 
-
-navLinks.forEach(link => {
- link.addEventListener("click", () => menuOpenButton.click());
-});
-
-
-//Initializing Swiper
-const swiper = new Swiper(".slider-wrapper", {
-  loop: true,
-  grabCursor: true,
-  spaceBetween: 25,
-  
-  // Pagination bullets
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
-    dynamicBullets: true,
-    
-  },
-  
-  // Navigation arrows
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-    
-  // Responsive breakpoints
-  breakpoints: {
-    0: {
-        sliderPerView: 1
-    },
-    768: {
-        sliderPerView: 2
-    },
-    1024: {
-        sliderPerView: 3
-    },
+      if (menuToggle.classList.contains('fa-bars')) {
+        menuToggle.classList.remove('fa-bars')
+        menuToggle.classList.add('fa-times')
+      } else {
+        menuToggle.classList.remove('fa-times')
+        menuToggle.classList.add('fa-bars')
+      }
+    })
   }
-});
+
+  const categoryLinks = document.querySelectorAll('.category-card')
+  const productCards = document.querySelectorAll('.product-card')
+
+  categoryLinks.forEach((link) => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault()
+
+      // Remove a classe ativa de todas as categorias
+      categoryLinks.forEach((catLink) => {
+        catLink.classList.remove('active-category')
+      })
+      // Adiciona a classe ativa à categoria clicada
+      link.classList.add('active-category')
+
+      const selectedCategory = link.getAttribute('data-category')
+
+      productCards.forEach((card) => {
+        const productCategory = card.getAttribute('data-category')
+
+        if (selectedCategory === 'all' || selectedCategory === productCategory) {
+          card.classList.remove('hidden')
+        } else {
+          card.classList.add('hidden')
+        }
+      })
+    })
+  })
+
+  const modal = document.getElementById('image-modal');
+  const modalImage = document.getElementById('modal-image');
+  const closeModal = document.querySelector('.modal-close');
+
+  document.querySelectorAll('.product-image-wrapper').forEach(card => {
+    card.addEventListener('click', () => {
+      const imageSrc = card.querySelector('.product-image').src;
+      modalImage.src = imageSrc;
+      modal.classList.add('active');
+    });
+  });
+
+  // Função para fechar o modal
+  const closeImageModal = () => {
+    modal.classList.remove('active');
+  };
+
+  // Fechar ao clicar no 'X'
+  closeModal.addEventListener('click', closeImageModal);
+
+  // Fechar ao clicar fora da imagem (no fundo do modal)
+  modal.addEventListener('click', (event) => {
+    if (event.target === modal) {
+      closeImageModal();
+    }
+  })
+})

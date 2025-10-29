@@ -1,334 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tex Shoes</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tex Shoes - Sua Loja de Tênis</title>
 
-      <!--- Linking Font Awesome for icons-->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-    />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
-    <!--Link Swiper CSS-->
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!-- Header / Navbar -->
-    <header>
-      <nav class="navbar section-content">
-        <a href="#" class="nav-logo">
-          <h2 class="logo-text">👟TEX SHOES</h2>
+  <!-- Font Awesome para ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+
+  <!-- CSS Personalizado -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- Cabeçalho -->
+  <header class="header">
+    <nav class="navbar section-content">
+      <a href="#" class="nav-logo">
+        <h2 class="logo-text">👟 TEX SHOES</h2>
+      </a>
+
+      <ul class="nav-menu" id="nav-menu">
+        <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+        <li class="nav-item"><a href="#featured" class="nav-link">Destaques</a></li>
+        <li class="nav-item"><a href="#categories" class="nav-link">Categorias</a></li>
+        <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <i class="fas fa-search nav-icon"></i>
+        <i class="fas fa-user nav-icon"></i>
+        <i class="fas fa-shopping-cart nav-icon"></i>
+        <button id="menu-toggle" class="fas fa-bars nav-icon"></button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Seção Principal (Hero) -->
+    <section class="hero-section" id="home">
+      <div class="section-content hero-content">
+        <div class="hero-details">
+          <h1 class="title">Estilo e Conforto a Cada Passo</h1>
+          <p class="description">
+            Descubra as últimas tendências em calçados e encontre o par perfeito para você.
+          </p>
+          <a href="#featured" class="button">Ver Coleção</a>
+        </div>
+        <div class="hero-image-wrapper">
+          <img src="images/Imagens projeto/logo-without-bg.png" alt="Tênis em destaque" class="hero-image" />
+        </div>
+      </div>
+    </section>
+
+    <section class="categories-section" id="categories">
+      <h2 class="section-title">Navegue por Categoria</h2>
+      <div class="section-content category-grid">
+        <a href="#" class="category-card active-category" data-category="all">
+          <div class="category-icon-wrapper">
+            <i class="fas fa-tags"></i>
+          </div>
+          <h3 class="category-name">Todos</h3>
         </a>
-
-        <ul class="nav-menu">
-          <button id="menu-close-button" class="fas fa-times">
-</button>
-
-          <li class="nav-item">
-            <a href="#" class="nav-link">Home</a>
-          </li>
-          <li class="nav-item">
-            <a href="#about" class="nav-link">About</a>
-          </li>
-          <li class="nav-item">
-            <a href="#menu" class="nav-link">Menu</a>
-          </li>
-          <li class="nav-item">
-            <a href="#testimonials" class="nav-link">Testimonials</a>
-          </li>
-          <!-- <li class="nav-item">
-            <a href="#gallery" class="nav-link">Gallery</a>
-          </li> -->
-          <li class="nav-item">
-            <a href="#contact" class="nav-link">Contact</a>
-          </li>
-        </ul>
-
-        <button id="menu-open-button" class="fas fa-bars"></button>
-      </nav>
-    </header>
-
-    <main>
-      <section class="hero-section">
-        <div class="section-content">
-          <div class="hero-image-wrapper">
-              <img
-                src="images/Imagens projeto/logo-without-bg.png"
-                alt="Hero"
-                class="hero-image"
-              />
-            </div>
-          <div class="hero-details">
-            <h2 class="title">Best Coffee</h2>
-            <h3 class="subtitle">
-              Make your day great with our special coffee!
-            </h3>
-            <p class="description">
-              Welcome to our coffee paradise, where every bean tells a story and
-              every cup sparks joy.
-            </p>
-
-            <div class="buttons">
-              <a href="#" class="button order-now">Order now</a>
-              <a href="#" class="button contact-us">Contact us</a>
-            </div>
-            
+        <!-- Categoria 1 -->
+        <a href="#" class="category-card" data-category="esportivo">
+          <div class="category-icon-wrapper">
+            <i class="fas fa-running"></i>
           </div>
-        </div>
-      </section>
+          <h3 class="category-name">Esportivo</h3>
+        </a>
+        <!-- Categoria 2 -->
+        <a href="#" class="category-card" data-category="casual">
+          <div class="category-icon-wrapper">
+            <i class="fas fa-shoe-prints"></i>
+          </div>
+          <h3 class="category-name">Casual</h3>
+        </a>
+        <!-- Categoria 3 -->
+        <a href="#" class="category-card" data-category="aventura">
+          <div class="category-icon-wrapper">
+            <i class="fas fa-hiking"></i>
+          </div>
+          <h3 class="category-name">Aventura</h3>
+        </a>
+        <!-- Categoria 4 -->
+        <a href="#" class="category-card" data-category="social">
+          <div class="category-icon-wrapper">
+            <i class="fas fa-user-tie"></i>
+          </div>
+          <h3 class="category-name">Social</h3>
+        </a>
+      </div>
+    </section>
 
-      <!---About section-->
-      <section class="about-section" id="about">
-        <div class="section-content">
-          <!-- <div class="about-image-wrapper">
-            <img src="images/about-image.jpg" alt="About" class="about-image">
-          </div> -->
-          <div class="about-details">
-            <h2 class="section-title">About Us</h2>
+    <!-- Seção de Produtos em Destaque -->
+    <section class="products-section" id="featured">
+      <h2 class="section-title">Nossos Destaques</h2>
+      <div class="section-content product-grid">
+        <!-- Produto 1 -->
+        <article class="product-card" data-category="casual">
+          <div class="product-image-wrapper">
+            <img src="images/Imagens projeto/IMG-20251022-WA0014.jpg" alt="Tênis 1" class="product-image">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Tênis Casual Urbano</h3>
+            <p class="product-category">Casual</p>
+            <p class="product-price">R$ 299,90</p>
+            <button class="button">Adicionar ao Carrinho</button>
+          </div>
+        </article>
+        <!-- Produto 2 -->
+        <article class="product-card" data-category="esportivo">
+          <div class="product-image-wrapper">
+            <img src="images/Imagens projeto/IMG-20251022-WA0015.jpg" alt="Tênis 2" class="product-image">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Tênis Esportivo Performance</h3>
+            <p class="product-category">Esportivo</p>
+            <p class="product-price">R$ 459,90</p>
+            <button class="button">Adicionar ao Carrinho</button>
+          </div>
+        </article>
+        <!-- Produto 3 -->
+        <article class="product-card" data-category="esportivo">
+          <div class="product-image-wrapper">
+            <img src="images/Imagens projeto/IMG-20251022-WA0016.jpg" alt="Tênis 3" class="product-image">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Bota Adventure</h3>
+            <p class="product-category">Aventura</p>
+            <p class="product-price">R$ 599,90</p>
+            <button class="button">Adicionar ao Carrinho</button>
+          </div>
+        </article>
+        <!-- Produto 4 -->
+        <article class="product-card" data-category="aventura">
+          <div class="product-image-wrapper">
+            <img src="images/Imagens projeto/IMG-20251022-WA0017.jpg" alt="Tênis 4" class="product-image">
+          </div>
+          <div class="product-info">
+            <h3 class="product-name">Sapatênis Elegante</h3>
+            <p class="product-category">Social</p>
+            <p class="product-price">R$ 349,90</p>
+            <button class="button">Adicionar ao Carrinho</button>
+          </div>
+        </article>
+      </div>
+    </section>
 
-            <p class="text">At Coffee House in Bermdorf, Germany, we pride ourselves on being a go-to destination for coffee lovers and conversation seekers alike. We're dedicated to prviding on exceptional coffee experience in a cazy and inviting atmosphere, where guests can relax, unwind, and enjoy their time in comfort. </p>
+    <!-- Seção de Contato -->
+    <section class="contact-section" id="contact">
+      <h2 class="section-title">Fale Conosco</h2>
+      <div class="section-content contact-content">
+        <div class="contact-info">
+          <h3>Informações de Contato</h3>
+          <p><i class="fas fa-map-marker-alt"></i> Rua Fictícia, 123, Cidade, BR</p>
+          <p><i class="fas fa-envelope"></i> contato@texshoes.com</p>
+          <p><i class="fas fa-phone"></i> (11) 99999-8888</p>
           <div class="social-link-list">
-              <!-- <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a> -->
-              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
-              <!-- <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a> -->
-            </div>
+            <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
+            <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a>
           </div>
         </div>
-      </section>
+        <form action="#" class="contact-form">
+          <h3>Envie uma mensagem</h3>
+          <input type="text" placeholder="Seu nome" class="form-input" required />
+          <input type="email" placeholder="Seu email" class="form-input" required />
+          <textarea placeholder="Sua mensagem" class="form-input" required></textarea>
+          <button type="submit" class="button">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
 
+  <!-- Rodapé -->
+  <footer class="footer-section">
+    <div class="section-content">
+      <p class="copyright-text">&copy; 2025 Tex Shoes. Todos os direitos reservados.</p>
+      <p class="policy-text">
+        <a href="#" class="policy-link">Política de Privacidade</a>
+        <span class="separator">•</span>
+        <a href="#" class="policy-link">Política de Reembolso</a>
+      </p>
+    </div>
+  </footer>
 
-      <!----Menu Section ---->
+  <div id="image-modal" class="modal">
+    <span class="modal-close">&times;</span>
+    <img class="modal-content" id="modal-image">
+  </div>
 
-      <section class="menu-section" id="menu">
-        <h2 class="section-title">Nossos produtos</h2>
-        <div class="section-content">
-          <ul class="menu-list">
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0014.jpg" alt="Hot Beverages" class="menu-image">
-            <h3 class="name">Hot Beverages</h3>
-            <p class="text">Wide range of Streaming hot coffee to make you fresh and light.</p>
-            </li>
+  <!-- Script Personalizado -->
+  <script src="script.js"></script>
+</body>
 
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0016.jpg" alt="Cold Beverages" class="menu-image">
-            <h3 class="name">Cold Beverages</h3>
-            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
-            </li>
-
-              <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0015.jpg" alt="Cold Beverages" class="menu-image">
-            <h3 class="name">Refreshment</h3>
-            <p class="text">Fruit and icy refreshing drink to make feel refresh.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0017.jpg" alt="Special Combos" class="menu-image">
-            <h3 class="name">Special Combos</h3>
-            <p class="text">Your favorite eating and drinking combations.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0018.jpg" alt="Dessert" class="menu-image">
-            <h3 class="name">Dessert</h3>
-            <p class="text">Satiate your palate and take you on a culinary treat.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0019.jpg" alt="burger & French Fries"" class="menu-image">
-            <h3 class="name">Burger & French Fries</h3>
-            <p class="text">Quick bites to satisfy your small size hunger.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0016.jpg" alt="Cold Beverages" class="menu-image">
-            <h3 class="name">Cold Beverages</h3>
-            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0016.jpg" alt="Cold Beverages" class="menu-image">
-            <h3 class="name">Cold Beverages</h3>
-            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0016.jpg" alt="Cold Beverages" class="menu-image">
-            <h3 class="name">Cold Beverages</h3>
-            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0016.jpg" alt="Cold Beverages" class="menu-image">
-            <h3 class="name">Cold Beverages</h3>
-            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0016.jpg" alt="Cold Beverages" class="menu-image">
-            <h3 class="name">Cold Beverages</h3>
-            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
-            </li>
-
-            <li class="menu-item">
-              <img src="images/Imagens projeto/IMG-20251022-WA0016.jpg" alt="Cold Beverages" class="menu-image">
-            <h3 class="name">Cold Beverages</h3>
-            <p class="text">Creamy and frothy cold coffee to make you cool.</p>
-            </li>
-
-          </ul>
-        </div>
-      </section>
-
-      <!---Testimonials section --->
-      <section class="testimonials-section" id="testimonials">
-        <h2 class="section-title">Testimonials</h2>
-        <div class="section-content">
-          <div class="slider-container swiper">
-            <div class="slider-wrapper">
-              <ul class="testimonials-list swiper-wrapper">
-                <li class="testimonial swiper-slide">
-                  <img src="images/user-1.jpg" alt="User" class="user-image" />
-                  <h3 class="name">Sarah Johnson</h3>
-                  <i class="feedback">"Loved the French roast. Perfectly balanced and rich. Will order again!"</i>
-                </li>
-                <li class="testimonial swiper-slide">
-                  <img src="images/user-2.jpg" alt="User" class="user-image" />
-                  <h3 class="name">James Wilson</h3>
-                  <i class="feedback">"Great espresso blend! Smooth and bold flavor. Fast shipping too!"</i>
-                </li>
-                <li class="testimonial swiper-slide">
-                  <img src="images/user-3.jpg" alt="User" class="user-image" />
-                  <h3 class="name">Michael Brown</h3>
-                  <i class="feedback">"Fantastic mocha flavor. Fresh and aromatic. Quick shipping!"</i>
-                </li>
-                <li class="testimonial swiper-slide">
-                  <img src="images/user-4.jpg" alt="User" class="user-image" />
-                  <h3 class="name">Emily Harris</h3>
-                  <i class="feedback">"Excellent quality! Fresh beans and quick delivery. Highly recommend."</i>
-                </li>
-                <li class="testimonial swiper-slide">
-                  <img src="images/user-5.jpg" alt="User" class="user-image" />
-                  <h3 class="name">Anthony Thompson</h3>
-                  <i class="feedback">"Best decaf I've tried! Smooth and flavorful. Arrived promptly."</i>
-                </li>
-              </ul>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-slide-button swiper-button-prev"></div>
-              <div class="swiper-slide-button swiper-button-next"></div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      <!---Gallery section --->
-      <!-- <section class="gallery-section" id="gallery">
-        <h2 class="section-title">Gallery</h2>
-        <div class="section-content">
-          <ul class="gallery-list">
-            <li class="gallery-item">
-              <img src="images/gallery-1.jpg" alt="Gallery" class="gallery-image">
-            </li>
-
-            <li class="gallery-item">
-              <img src="images/gallery-2.jpg" alt="Gallery" class="gallery-image">
-            </li>
-
-            <li class="gallery-item">
-              <img src="images/gallery-3.jpg" alt="Gallery" class="gallery-image">
-            </li>
-
-            <li class="gallery-item">
-              <img src="images/gallery-4.jpg" alt="Gallery" class="gallery-image">
-            </li>
-
-            <li class="gallery-item">
-              <img src="images/gallery-5.jpg" alt="Gallery" class="gallery-image">
-            </li>
-
-            <li class="gallery-item">
-              <img src="images/gallery-6.jpg" alt="Gallery" class="gallery-image">
-            </li>
-
-          </ul>
-        </div>
-      </section> -->
-
-      <!---Contact section-->
-      <section class="contact-section" id="contact">
-        <h2 class="section-title">Contact Us</h2>
-        <div class="section-content">
-          <ul class="contact-info-list">
-            <li class="contact-info">
-              <i class="fa-solid fa-location-crosshairs"></i>
-              <p>123 Campsite Avenue, Wilderness, CA 98765</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-envelope"></i>
-              <p>info@coffeeshopwebsite.com</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-solid fa-phone"></i>
-              <p>(123) 456-78909</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Monday - Friday: 9:00 AM - 5:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Saturday: 10:00 AM - 3:00 PM</p>
-            </li>
-            <li class="contact-info">
-              <i class="fa-regular fa-clock"></i>
-              <p>Sunday: Closed</p>
-            </li>
-          <li class="contact-info">
-              <i class="fa-solid fa-globe"></i>
-              <p>www.CaféWeb.com</p>
-            </li>
-          </ul>
-        
-                <form action="#" class="contact-form">
-            <input type="text" placeholder="Your name" class="form-input" required />
-            <input type="email" placeholder="Your email" class="form-input" required />
-            <textarea placeholder="Your message" class="form-input" required></textarea>
-            <button type="submit" class="button submit-button">Submit</button>
-          </form>
-        </div>
-      </section>
-
-      <!---Footer Section-->
-      <footer class="footer-section">
-        <div class="section-content">
-          <p class="coopyright-text">@ 2025 Café Web</p>
-
-        <div class="social-link-list">
-              <!-- <a href="#" class="social-link"><i class="fa-brands fa-facebook"></i></a> -->
-              <a href="#" class="social-link"><i class="fa-brands fa-instagram"></i></a>
-              <a href="#" class="social-link"><i class="fa-brands fa-whatsapp"></i></a>
-              <!-- <a href="#" class="social-link"><i class="fa-brands fa-x-twitter"></i></a> -->
-            </div>
-
-            <p class="class-policy-text">
-              <a href="#" class="policy-link">Privacy policy</a>
-              <span class="seprator">•</span>
-              <a href="#" class="policy-link">Refund policy</a>
-            </p>
-
-            </div>
-      </footer>
-
-    </main>
-
-
-  <!-- Linking Swiper script -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-    
-  <!-- Linking custom script -->
-    <script src="script.js"></script>
-    
-  </body>
 </html>
