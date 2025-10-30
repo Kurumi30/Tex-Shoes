@@ -1,7 +1,7 @@
 :root {
   --primary-color: #3a3a3a;
   --secondary-color: #f4f4f4;
-  --accent-color: #007bff;
+  --accent-color: #576577;
   --text-color: #333;
   --light-gray: #e0e0e0;
   --white: #fff;
@@ -59,7 +59,7 @@ ul {
 }
 
 .button:hover {
-  background-color: #0056b3;
+  background-color: #344353;
 }
 
 .header {
@@ -253,7 +253,62 @@ ul {
   font-size: 1.3rem;
   font-weight: bold;
   color: var(--accent-color);
-  margin-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.size-guide-link {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.size-guide-link:hover {
+    color: var(--accent-color);
+}
+
+.modal-close:focus {
+    color: #bbb;
+    text-decoration: none;
+}
+
+/* Estilos para o Modal da Tabela */
+.modal-content-table {
+    background-color: #fefefe;
+    padding: 20px 40px 30px 40px;
+    border-radius: 10px;
+    max-width: 500px;
+    width: 90%;
+    position: relative;
+    animation: zoomIn 0.4s ease;
+}
+
+.modal-content-table h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.size-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.size-table th, .size-table td {
+    border: 1px solid var(--light-gray);
+    padding: 12px;
+}
+
+.size-table thead {
+    background-color: var(--primary-color);
+    color: var(--white);
+}
+
+.size-guide-close {
+    color: #aaa;
 }
 
 .categories-section {
@@ -301,16 +356,19 @@ ul {
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
 }
 
-.contact-info,
-.contact-form {
+.contact-form
+/* .contact-info */
+{
   flex: 1;
   min-width: 300px;
 }
 
-.contact-info h3,
-.contact-form h3 {
+/* .contact-form h3 { */
+.contact-info h3 {
   font-size: 1.5rem;
   margin-bottom: 20px;
 }
@@ -320,6 +378,16 @@ ul {
   display: flex;
   align-items: center;
   gap: 10px;
+  justify-content: center;
+}
+
+.contact-info a {
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-info a:hover {
+  color: var(--accent-color);
 }
 
 .social-link-list {
@@ -332,19 +400,19 @@ ul {
   font-size: 1.5rem;
 }
 
-.form-input {
+/* .form-input {
   width: 100%;
   padding: 12px;
   margin-bottom: 15px;
   border: 1px solid var(--light-gray);
   border-radius: 5px;
   font-size: 1rem;
-}
+} */
 
-textarea.form-input {
+/* textarea.form-input {
   resize: vertical;
   min-height: 120px;
-}
+} */
 
 .footer-section {
   background-color: var(--primary-color);
@@ -424,6 +492,59 @@ textarea.form-input {
 .modal-close:focus {
   color: #bbb;
   text-decoration: none;
+}
+
+.about-section {
+  padding: 80px 0;
+  background-color: var(--white);
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+
+.about-image-wrapper,
+.about-details {
+  flex: 1;
+  min-width: 300px;
+}
+
+.about-image {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+.about-subtitle {
+  font-size: 1.8rem;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+
+.about-description {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+.about-values {
+  list-style: none;
+  padding-left: 0;
+}
+
+.about-values li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.about-values .fa-check-circle {
+  color: var(--accent-color);
 }
 
 @media (max-width: 768px) {
