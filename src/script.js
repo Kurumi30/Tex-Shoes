@@ -1,20 +1,34 @@
 document.addEventListener('DOMContentLoaded', () => {
   const menuToggle = document.getElementById('menu-toggle')
   const navMenu = document.getElementById('nav-menu')
+  const navLinks = document.querySelectorAll('.nav-link')
+
+  const closeMobileMenu = () => {
+    navMenu.classList.remove('active')
+    menuToggle.classList.remove('fa-times')
+    menuToggle.classList.add('fa-bars')
+  }
 
   if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', () => {
       navMenu.classList.toggle('active')
 
-      if (menuToggle.classList.contains('fa-bars')) {
+      if (navMenu.classList.contains('active')) {
         menuToggle.classList.remove('fa-bars')
         menuToggle.classList.add('fa-times')
       } else {
-        menuToggle.classList.remove('fa-times')
-        menuToggle.classList.add('fa-bars')
+        closeMobileMenu()
       }
     })
   }
+
+  navLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (navMenu.classList.contains('active')) {
+        closeMobileMenu()
+      }
+    })
+  })
 
   const categoryLinks = document.querySelectorAll('.category-card')
   const productCards = document.querySelectorAll('.product-card')
@@ -23,11 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
     link.addEventListener('click', (event) => {
       event.preventDefault()
 
-      // Remove a classe ativa de todas as categorias
       categoryLinks.forEach((catLink) => {
         catLink.classList.remove('active-category')
       })
-      // Adiciona a classe ativa à categoria clicada
+
       link.classList.add('active-category')
 
       const selectedCategory = link.getAttribute('data-category')
@@ -44,30 +57,50 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  const modal = document.getElementById('image-modal');
-  const modalImage = document.getElementById('modal-image');
-  const closeModal = document.querySelector('.modal-close');
+  const modal = document.getElementById('image-modal')
+  const modalImage = document.getElementById('modal-image')
+  const closeModal = document.querySelector('.modal-close')
 
   document.querySelectorAll('.product-image-wrapper').forEach(card => {
     card.addEventListener('click', () => {
-      const imageSrc = card.querySelector('.product-image').src;
-      modalImage.src = imageSrc;
-      modal.classList.add('active');
-    });
-  });
+      const imageSrc = card.querySelector('.product-image').src
 
-  // Função para fechar o modal
+      modalImage.src = imageSrc
+      modal.classList.add('active')
+    })
+  })
+
   const closeImageModal = () => {
-    modal.classList.remove('active');
-  };
+    modal.classList.remove('active')
+  }
 
-  // Fechar ao clicar no 'X'
-  closeModal.addEventListener('click', closeImageModal);
+  closeModal.addEventListener('click', closeImageModal)
 
-  // Fechar ao clicar fora da imagem (no fundo do modal)
   modal.addEventListener('click', (event) => {
-    if (event.target === modal) {
-      closeImageModal();
+    if (event.target === modal) closeImageModal()
+  })
+
+  const sizeGuideModal = document.getElementById('size-guide-modal')
+  const sizeGuideLinks = document.querySelectorAll('.size-guide-link')
+  const closeSizeGuideModal = document.querySelector('.size-guide-close')
+
+  sizeGuideLinks.forEach(link => {
+    link.addEventListener('click', (event) => {
+      event.preventDefault()
+
+      sizeGuideModal.classList.add('active')
+    })
+  })
+
+  const closeTheSizeModal = () => {
+    sizeGuideModal.classList.remove('active')
+  }
+
+  closeSizeGuideModal.addEventListener('click', closeTheSizeModal)
+
+  sizeGuideModal.addEventListener('click', (event) => {
+    if (event.target === sizeGuideModal) {
+      closeTheSizeModal()
     }
   })
 })
