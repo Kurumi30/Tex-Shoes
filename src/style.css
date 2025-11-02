@@ -400,6 +400,54 @@ ul {
   font-size: 1.5rem;
 }
 
+#modal-image {
+  transition: transform 0.35s ease;
+  max-width: 90%;
+  max-height: 85vh;
+  cursor: zoom-in;
+  touch-action: pinch-zoom;
+}
+
+#modal-image.zoomed {
+  transform: scale(1.6);
+  cursor: zoom-out;
+  max-width: none;
+  max-height: none;
+}
+
+.policy-section {
+  padding: 60px 0;
+  background-color: var(--secondary-color);
+}
+
+.policy-content {
+  max-width: 900px;
+  margin: 0 auto;
+  color: var(--primary-color);
+  line-height: 1.6;
+}
+
+.policy-section h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+  color: var(--primary-color);
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 40px;
+  align-items: center;
+}
+
+/* texto introdutório */
+.contact-intro {
+  color: #666;
+  margin-bottom: 18px;
+  font-size: 0.98rem;
+}
+
+
 /* .form-input {
   width: 100%;
   padding: 12px;
