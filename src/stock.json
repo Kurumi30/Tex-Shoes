@@ -1,0 +1,1073 @@
+[
+  {
+    "id": 14,
+    "name": "Tênis Casual Urbano",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-14.jpg"
+  },
+  {
+    "id": 15,
+    "name": "Tênis Esportivo Leve",
+    "category": "esportivo",
+    "price": 199.90,
+    "image": "src/images/model-15.jpg"
+  },
+  {
+    "id": 16,
+    "name": "Tênis de Corrida Pro",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-16.jpg"
+  },
+  {
+    "id": 17,
+    "name": "Tênis Casual Confort",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-17.jpg"
+  },
+  {
+    "id": 18,
+    "name": "Tênis Esportivo Max",
+    "category": "esportivo",
+    "price": 229.90,
+    "image": "src/images/model-18.jpg"
+  },
+  {
+    "id": 19,
+    "name": "Tênis Casual Street",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-19.jpg"
+  },
+  {
+    "id": 20,
+    "name": "Tênis Esportivo Flex",
+    "category": "esportivo",
+    "price": 219.90,
+    "image": "src/images/model-20.jpg"
+  },
+  {
+    "id": 21,
+    "name": "Tênis Casual Urban Fit",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-21.jpg"
+  },
+  {
+    "id": 22,
+    "name": "Tênis Esportivo Sprint",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-22.jpg"
+  },
+  {
+    "id": 23,
+    "name": "Tênis Casual Modern",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-23.jpg"
+  },
+  {
+    "id": 24,
+    "name": "Tênis Esportivo Endurance",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-24.jpg"
+  },
+  {
+    "id": 25,
+    "name": "Tênis Casual Classic",
+    "category": "casual",
+    "price": 149.90,
+    "image": "src/images/model-25.jpg"
+  },
+  {
+    "id": 26,
+    "name": "Tênis Esportivo Power",
+    "category": "esportivo",
+    "price": 229.90,
+    "image": "src/images/model-26.jpg"
+  },
+  {
+    "id": 27,
+    "name": "Tênis Casual Trend",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-27.jpg"
+  },
+  {
+    "id": 28,
+    "name": "Tênis Esportivo Velocity",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-28.jpg"
+  },
+  {
+    "id": 29,
+    "name": "Tênis Casual Comfort Fit",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-29.jpg"
+  },
+  {
+    "id": 30,
+    "name": "Tênis Esportivo Ultra",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-30.jpg"
+  },
+  {
+    "id": 31,
+    "name": "Tênis Casual Urban Pro",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-31.jpg"
+  },
+  {
+    "id": 32,
+    "name": "Tênis Esportivo Enduro",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-32.jpg"
+  },
+  {
+    "id": 33,
+    "name": "Tênis Casual Metro",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-33.jpg"
+  },
+  {
+    "id": 34,
+    "name": "Tênis Esportivo Nitro",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-34.jpg"
+  },
+  {
+    "id": 35,
+    "name": "Tênis Casual City",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-35.jpg"
+  },
+  {
+    "id": 36,
+    "name": "Tênis Esportivo Turbo",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-36.jpg"
+  },
+  {
+    "id": 37,
+    "name": "Tênis Casual Urban Lite",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-37.jpg"
+  },
+  {
+    "id": 38,
+    "name": "Tênis Esportivo Aero",
+    "category": "esportivo",
+    "price": 229.90,
+    "image": "src/images/model-38.jpg"
+  },
+  {
+    "id": 39,
+    "name": "Tênis Casual Modern Fit",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-39.jpg"
+  },
+  {
+    "id": 40,
+    "name": "Tênis Esportivo Zoom",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-40.jpg"
+  },
+  {
+    "id": 41,
+    "name": "Tênis Casual Street Pro",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-41.jpg"
+  },
+  {
+    "id": 42,
+    "name": "Tênis Esportivo Flash",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-42.jpg"
+  },
+  {
+    "id": 43,
+    "name": "Tênis Casual Urban Edge",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-43.jpg"
+  },
+  {
+    "id": 44,
+    "name": "Tênis Esportivo Pulse",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-44.jpg"
+  },
+  {
+    "id": 45,
+    "name": "Tênis Casual Metro Fit",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-45.jpg"
+  },
+  {
+    "id": 46,
+    "name": "Tênis Esportivo Surge",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-46.jpg"
+  },
+  {
+    "id": 47,
+    "name": "Tênis Casual City Pro",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-47.jpg"
+  },
+  {
+    "id": 48,
+    "name": "Tênis Esportivo Ignite",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-48.jpg"
+  },
+  {
+    "id": 49,
+    "name": "Tênis Casual Urban Max",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-49.jpg"
+  },
+  {
+    "id": 50,
+    "name": "Tênis Esportivo Stride",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-50.jpg"
+  },
+  {
+    "id": 51,
+    "name": "Tênis Casual Comfort Pro",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-51.jpg"
+  },
+  {
+    "id": 52,
+    "name": "Tênis Esportivo Aero Fit",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-52.jpg"
+  },
+  {
+    "id": 53,
+    "name": "Tênis Casual Trendy",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-53.jpg"
+  },
+  {
+    "id": 54,
+    "name": "Tênis Esportivo Velocity Pro",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-54.jpg"
+  },
+  {
+    "id": 55,
+    "name": "Tênis Casual Urban Style",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-55.jpg"
+  },
+  {
+    "id": 56,
+    "name": "Tênis Esportivo Enduro Fit",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-56.jpg"
+  },
+  {
+    "id": 57,
+    "name": "Tênis Casual Metro Pro",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-57.jpg"
+  },
+  {
+    "id": 58,
+    "name": "Tênis Esportivo Nitro Max",
+    "category": "esportivo",
+    "price": 279.90,
+    "image": "src/images/model-58.jpg"
+  },
+  {
+    "id": 59,
+    "name": "Tênis Casual City Lite",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-59.jpg"
+  },
+  {
+    "id": 60,
+    "name": "Tênis Esportivo Turbo Fit",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-60.jpg"
+  },
+  {
+    "id": 61,
+    "name": "Tênis Casual Urban Comfort",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-61.jpg"
+  },
+  {
+    "id": 62,
+    "name": "Tênis Esportivo Aero Max",
+    "category": "esportivo",
+    "price": 229.90,
+    "image": "src/images/model-62.jpg"
+  },
+  {
+    "id": 63,
+    "name": "Tênis Casual Modern Pro",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-63.jpg"
+  },
+  {
+    "id": 64,
+    "name": "Tênis Esportivo Zoom Fit",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-64.jpg"
+  },
+  {
+    "id": 65,
+    "name": "Tênis Casual Street Lite",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-65.jpg"
+  },
+  {
+    "id": 66,
+    "name": "Tênis Esportivo Flash Pro",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-66.jpg"
+  },
+  {
+    "id": 67,
+    "name": "Tênis Casual Urban Flex",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-67.jpg"
+  },
+  {
+    "id": 68,
+    "name": "Tênis Esportivo Pulse Max",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-68.jpg"
+  },
+  {
+    "id": 69,
+    "name": "Tênis Casual Metro Lite",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-69.jpg"
+  },
+  {
+    "id": 70,
+    "name": "Tênis Esportivo Surge Pro",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-70.jpg"
+  },
+  {
+    "id": 71,
+    "name": "Tênis Casual City Fit",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-71.jpg"
+  },
+  {
+    "id": 72,
+    "name": "Tênis Esportivo Ignite Max",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-72.jpg"
+  },
+  {
+    "id": 73,
+    "name": "Tênis Casual Urban Sprint",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-73.jpg"
+  },
+  {
+    "id": 74,
+    "name": "Tênis Esportivo Stride Pro",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-74.jpg"
+  },
+  {
+    "id": 75,
+    "name": "Tênis Casual Comfort Lite",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-75.jpg"
+  },
+  {
+    "id": 76,
+    "name": "Tênis Esportivo Aero Sprint",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-76.jpg"
+  },
+  {
+    "id": 77,
+    "name": "Tênis Casual Trend Fit",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-77.jpg"
+  },
+  {
+    "id": 78,
+    "name": "Tênis Esportivo Velocity Lite",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-78.jpg"
+  },
+  {
+    "id": 79,
+    "name": "Tênis Casual Urban Enduro",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-79.jpg"
+  },
+  {
+    "id": 80,
+    "name": "Tênis Esportivo Enduro Max",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-80.jpg"
+  },
+  {
+    "id": 81,
+    "name": "Tênis Casual Metro Sprint",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-81.jpg"
+  },
+  {
+    "id": 82,
+    "name": "Tênis Esportivo Nitro Sprint",
+    "category": "esportivo",
+    "price": 279.90,
+    "image": "src/images/model-82.jpg"
+  },
+  {
+    "id": 83,
+    "name": "Tênis Casual City Max",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-83.jpg"
+  },
+  {
+    "id": 84,
+    "name": "Tênis Esportivo Turbo Max",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-84.jpg"
+  },
+  {
+    "id": 85,
+    "name": "Tênis Casual Urban Nitro",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-85.jpg"
+  },
+  {
+    "id": 86,
+    "name": "Tênis Esportivo Aero Turbo",
+    "category": "esportivo",
+    "price": 229.90,
+    "image": "src/images/model-86.jpg"
+  },
+  {
+    "id": 87,
+    "name": "Tênis Casual Modern Sprint",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-87.jpg"
+  },
+  {
+    "id": 88,
+    "name": "Tênis Esportivo Zoom Turbo",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-88.jpg"
+  },
+  {
+    "id": 89,
+    "name": "Tênis Casual Street Max",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-89.jpg"
+  },
+  {
+    "id": 90,
+    "name": "Tênis Esportivo Flash Sprint",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-90.jpg"
+  },
+  {
+    "id": 91,
+    "name": "Tênis Casual Urban Pulse",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-91.jpg"
+  },
+  {
+    "id": 92,
+    "name": "Tênis Esportivo Pulse Sprint",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-92.jpg"
+  },
+  {
+    "id": 93,
+    "name": "Tênis Casual Metro Max",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-93.jpg"
+  },
+  {
+    "id": 94,
+    "name": "Tênis Esportivo Surge Sprint",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-94.jpg"
+  },
+  {
+    "id": 95,
+    "name": "Tênis Casual City Sprint",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-95.jpg"
+  },
+  {
+    "id": 96,
+    "name": "Tênis Esportivo Ignite Sprint",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-96.jpg"
+  },
+  {
+    "id": 97,
+    "name": "Tênis Casual Urban Zoom",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-97.jpg"
+  },
+  {
+    "id": 98,
+    "name": "Tênis Esportivo Stride Sprint",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-98.jpg"
+  },
+  {
+    "id": 99,
+    "name": "Tênis Casual Comfort Sprint",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-99.jpg"
+  },
+  {
+    "id": 100,
+    "name": "Tênis Esportivo Aero Zoom",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-100.jpg"
+  },
+  {
+    "id": 101,
+    "name": "Tênis Casual Trend Zoom",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-101.jpg"
+  },
+  {
+    "id": 102,
+    "name": "Tênis Esportivo Velocity Sprint",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-102.jpg"
+  },
+  {
+    "id": 103,
+    "name": "Tênis Casual Urban Flash",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-103.jpg"
+  },
+  {
+    "id": 104,
+    "name": "Tênis Esportivo Enduro Sprint",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-104.jpg"
+  },
+  {
+    "id": 105,
+    "name": "Tênis Casual Metro Zoom",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-105.jpg"
+  },
+  {
+    "id": 106,
+    "name": "Tênis Esportivo Nitro Zoom",
+    "category": "esportivo",
+    "price": 279.90,
+    "image": "src/images/model-106.jpg"
+  },
+  {
+    "id": 107,
+    "name": "Tênis Casual City Flash",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-107.jpg"
+  },
+  {
+    "id": 108,
+    "name": "Tênis Esportivo Turbo Sprint",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-108.jpg"
+  },
+  {
+    "id": 109,
+    "name": "Tênis Casual Urban Surge",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-109.jpg"
+  },
+  {
+    "id": 110,
+    "name": "Tênis Esportivo Aero Flash",
+    "category": "esportivo",
+    "price": 229.90,
+    "image": "src/images/model-110.jpg"
+  },
+  {
+    "id": 111,
+    "name": "Tênis Casual Modern Zoom",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-111.jpg"
+  },
+  {
+    "id": 112,
+    "name": "Tênis Esportivo Zoom Sprint",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-112.jpg"
+  },
+  {
+    "id": 113,
+    "name": "Tênis Casual Street Flash",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-113.jpg"
+  },
+  {
+    "id": 114,
+    "name": "Tênis Esportivo Flash Zoom",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-114.jpg"
+  },
+  {
+    "id": 115,
+    "name": "Tênis Casual Urban Ignite",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-115.jpg"
+  },
+  {
+    "id": 116,
+    "name": "Tênis Esportivo Pulse Zoom",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-116.jpg"
+  },
+  {
+    "id": 117,
+    "name": "Tênis Casual Metro Flash",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-117.jpg"
+  },
+  {
+    "id": 118,
+    "name": "Tênis Esportivo Surge Zoom",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-118.jpg"
+  },
+  {
+    "id": 119,
+    "name": "Tênis Casual City Ignite",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-119.jpg"
+  },
+  {
+    "id": 120,
+    "name": "Tênis Esportivo Ignite Zoom",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-120.jpg"
+  },
+  {
+    "id": 121,
+    "name": "Tênis Casual Urban Stride",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-121.jpg"
+  },
+  {
+    "id": 122,
+    "name": "Tênis Esportivo Stride Zoom",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-122.jpg"
+  },
+  {
+    "id": 123,
+    "name": "Tênis Casual Comfort Zoom",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-123.jpg"
+  },
+  {
+    "id": 124,
+    "name": "Tênis Esportivo Aero Ignite",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-124.jpg"
+  },
+  {
+    "id": 125,
+    "name": "Tênis Casual Trend Ignite",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-125.jpg"
+  },
+  {
+    "id": 126,
+    "name": "Tênis Esportivo Velocity Zoom",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-126.jpg"
+  },
+  {
+    "id": 127,
+    "name": "Tênis Casual Urban Enduro Pro",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-127.jpg"
+  },
+  {
+    "id": 128,
+    "name": "Tênis Esportivo Enduro Zoom",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-128.jpg"
+  },
+  {
+    "id": 129,
+    "name": "Tênis Casual Metro Ignite",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-129.jpg"
+  },
+  {
+    "id": 130,
+    "name": "Tênis Esportivo Nitro Ignite",
+    "category": "esportivo",
+    "price": 279.90,
+    "image": "src/images/model-130.jpg"
+  },
+  {
+    "id": 131,
+    "name": "Tênis Casual City Surge",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-131.jpg"
+  },
+  {
+    "id": 132,
+    "name": "Tênis Esportivo Turbo Ignite",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-132.jpg"
+  },
+  {
+    "id": 133,
+    "name": "Tênis Casual Urban Aero",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-133.jpg"
+  },
+  {
+    "id": 134,
+    "name": "Tênis Esportivo Aero Ignite Pro",
+    "category": "esportivo",
+    "price": 229.90,
+    "image": "src/images/model-134.jpg"
+  },
+  {
+    "id": 135,
+    "name": "Tênis Casual Modern Ignite",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-135.jpg"
+  },
+  {
+    "id": 136,
+    "name": "Tênis Esportivo Zoom Ignite",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-136.jpg"
+  },
+  {
+    "id": 137,
+    "name": "Tênis Casual Street Ignite",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-137.jpg"
+  },
+  {
+    "id": 138,
+    "name": "Tênis Esportivo Flash Ignite",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-138.jpg"
+  },
+  {
+    "id": 139,
+    "name": "Tênis Casual Urban Pulse Pro",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-139.jpg"
+  },
+  {
+    "id": 140,
+    "name": "Tênis Esportivo Pulse Ignite",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-140.jpg"
+  },
+  {
+    "id": 141,
+    "name": "Tênis Casual Metro Aero",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-141.jpg"
+  },
+  {
+    "id": 142,
+    "name": "Tênis Esportivo Surge Ignite",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-142.jpg"
+  },
+  {
+    "id": 143,
+    "name": "Tênis Casual City Aero",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-143.jpg"
+  },
+  {
+    "id": 144,
+    "name": "Tênis Esportivo Ignite Pro",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-144.jpg"
+  },
+  {
+    "id": 145,
+    "name": "Tênis Casual Urban Stride Pro",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-145.jpg"
+  },
+  {
+    "id": 146,
+    "name": "Tênis Esportivo Stride Ignite",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-146.jpg"
+  },
+  {
+    "id": 147,
+    "name": "Tênis Casual Comfort Ignite",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-147.jpg"
+  },
+  {
+    "id": 148,
+    "name": "Tênis Esportivo Aero Stride",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-148.jpg"
+  },
+  {
+    "id": 149,
+    "name": "Tênis Casual Trend Stride",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-149.jpg"
+  },
+  {
+    "id": 150,
+    "name": "Tênis Esportivo Velocity Ignite",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-150.jpg"
+  },
+  {
+    "id": 151,
+    "name": "Tênis Casual Urban Flash Pro",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-151.jpg"
+  },
+  {
+    "id": 152,
+    "name": "Tênis Esportivo Enduro Ignite",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-152.jpg"
+  },
+  {
+    "id": 153,
+    "name": "Tênis Casual Metro Flash Pro",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-153.jpg"
+  },
+  {
+    "id": 154,
+    "name": "Tênis Esportivo Nitro Flash",
+    "category": "esportivo",
+    "price": 279.90,
+    "image": "src/images/model-154.jpg"
+  },
+  {
+    "id": 155,
+    "name": "Tênis Casual City Pulse",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-155.jpg"
+  },
+  {
+    "id": 156,
+    "name": "Tênis Esportivo Turbo Flash",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-156.jpg"
+  },
+  {
+    "id": 157,
+    "name": "Tênis Casual Urban Aero Pro",
+    "category": "casual",
+    "price": 159.90,
+    "image": "src/images/model-157.jpg"
+  },
+  {
+    "id": 158,
+    "name": "Tênis Esportivo Aero Flash Pro",
+    "category": "esportivo",
+    "price": 229.90,
+    "image": "src/images/model-158.jpg"
+  },
+  {
+    "id": 159,
+    "name": "Tênis Casual Modern Aero",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-159.jpg"
+  },
+  {
+    "id": 160,
+    "name": "Tênis Esportivo Zoom Flash",
+    "category": "esportivo",
+    "price": 269.90,
+    "image": "src/images/model-160.jpg"
+  },
+  {
+    "id": 161,
+    "name": "Tênis Casual Street Aero",
+    "category": "casual",
+    "price": 189.90,
+    "image": "src/images/model-161.jpg"
+  },
+  {
+    "id": 162,
+    "name": "Tênis Esportivo Flash Pro Max",
+    "category": "esportivo",
+    "price": 239.90,
+    "image": "src/images/model-162.jpg"
+  },
+  {
+    "id": 163,
+    "name": "Tênis Casual Urban Pulse Max",
+    "category": "casual",
+    "price": 169.90,
+    "image": "src/images/model-163.jpg"
+  },
+  {
+    "id": 164,
+    "name": "Tênis Esportivo Pulse Flash",
+    "category": "esportivo",
+    "price": 249.90,
+    "image": "src/images/model-164.jpg"
+  },
+  {
+    "id": 165,
+    "name": "Tênis Casual Metro Aero Pro",
+    "category": "casual",
+    "price": 179.90,
+    "image": "src/images/model-165.jpg"
+  },
+  {
+    "id": 166,
+    "name": "Tênis Esportivo Surge Flash",
+    "category": "esportivo",
+    "price": 259.90,
+    "image": "src/images/model-166.jpg"
+  }
+]

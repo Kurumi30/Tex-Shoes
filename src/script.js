@@ -12,7 +12,7 @@ function closeModal(modal) {
   modal.setAttribute('aria-hidden', 'true')
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', async () => {
   const $ = (sel, ctx = document) => ctx.querySelector(sel)
   const $$ = (sel, ctx = document) => Array.from(ctx.querySelectorAll(sel))
 
@@ -20,15 +20,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const navMenu = $('#nav-menu')
   const navLinks = $$('.nav-link')
 
-  const categoryLinks = $$('.category-card')
-  const productCards = $$('.product-card')
-
   const imageModal = $('#image-modal')
   const imageModalImg = $('#modal-image')
   const imageModalClose = imageModal ? $('.modal-close', imageModal) : null
 
   const sizeGuideModal = $('#size-guide-modal')
-  const sizeGuideLinks = $$('.size-guide-link')
   const sizeGuideClose = sizeGuideModal ? $('.size-guide-close', sizeGuideModal) : null
 
   const purchaseModal = $('#purchase-modal')
@@ -37,38 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
   const purchaseInstagram = $('#purchase-instagram')
   const purchaseClose = purchaseModal ? $('.purchase-close', purchaseModal) : null
 
-  if (purchaseModal) {
-    $$('.product-card .button').forEach(btn => {
-      btn.addEventListener('click', e => {
-        e.preventDefault()
-
-        const card = btn.closest('.product-card')
-        const name = card ? $('.product-name', card)?.textContent.trim() : 'produto'
-        const price = card ? $('.product-price', card)?.textContent.trim() : ''
-
-        if (purchaseProductName) purchaseProductName.textContent = `${name} ${price}`
-
-        const whatsappText = encodeURIComponent(`Olá, gostaria de comprar: ${name} ${price}`)
-        if (purchaseWhatsapp) purchaseWhatsapp.href = `https://wa.me/5511910076475?text=${whatsappText}`
-
-        if (purchaseInstagram) purchaseInstagram.href = 'https://www.instagram.com/texshoes_/'
-
-        openModal(purchaseModal)
-      })
-    })
-
-    if (purchaseClose) purchaseClose.addEventListener('click', () => closeModal(purchaseModal))
-
-    purchaseModal.addEventListener('click', e => {
-      if (e.target === purchaseModal) closeModal(purchaseModal)
-    })
-  }
-
-  const closeAllModals = () => {
-    closeModal(imageModal)
-    closeModal(sizeGuideModal)
-    closeModal(purchaseModal)
-  }
+  const productGrid = $('.product-grid')
 
   const setMenuIcons = open => {
     if (!menuToggle) return
@@ -83,41 +48,6 @@ document.addEventListener('DOMContentLoaded', () => {
     navMenu.classList.remove('active')
 
     setMenuIcons(false)
-  }
-
-  if (imageModal && imageModalImg) {
-    $$('.product-image-wrapper').forEach(wrapper => {
-      wrapper.addEventListener('click', () => {
-        const img = $('.product-image', wrapper)
-
-        if (!img || !img.src) return
-
-        imageModalImg.src = img.src
-        imageModalImg.alt = img.alt || ''
-        imageModalImg.classList.remove('zoomed')
-
-        openModal(imageModal)
-      })
-    })
-
-    if (imageModalClose) imageModalClose.addEventListener('click', () => {
-      if (imageModalImg) imageModalImg.classList.remove('zoomed')
-      closeModal(imageModal)
-    })
-
-    imageModalImg.addEventListener('click', (e) => {
-      e.stopPropagation()
-
-      imageModalImg.classList.toggle('zoomed')
-    })
-
-    imageModal.addEventListener('click', (ev) => {
-      if (ev.target === imageModal) {
-        if (imageModalImg) imageModalImg.classList.remove('zoomed')
-
-        closeModal(imageModal)
-      }
-    })
   }
 
   if (menuToggle && navMenu) {
@@ -136,69 +66,177 @@ document.addEventListener('DOMContentLoaded', () => {
     })
   })
 
-  // FILTRAGEM DE CATEGORIAS
-  if (categoryLinks.length && productCards.length) {
-    const clearActive = () => categoryLinks.forEach(l => l.classList.remove('active-category'))
+  const closeAllModals = () => {
+    closeModal(imageModal)
+    closeModal(sizeGuideModal)
+    closeModal(purchaseModal)
 
-    categoryLinks.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault()
-
-        clearActive()
-
-        link.classList.add('active-category')
-
-        const selected = link.dataset.category
-
-        productCards.forEach(card => {
-          const cat = card.dataset.category
-
-          card.classList.toggle('hidden', !(selected === 'all' || selected === cat))
-        })
-
-        if (navMenu && navMenu.classList.contains('active')) closeMobileMenu()
-      })
-    })
-  }
-
-  // MODAL DE IMAGEM (Lightbox)
-  if (imageModal && imageModalImg) {
-    $$('.product-image-wrapper').forEach(wrapper => {
-      wrapper.addEventListener('click', () => {
-        const img = $('.product-image', wrapper)
-
-        if (!img || !img.src) return
-
-        imageModalImg.src = img.src
-
-        openModal(imageModal)
-      })
-    })
-
-    if (imageModalClose) imageModalClose.addEventListener('click', () => closeModal(imageModal))
-
-    imageModal.addEventListener('click', (ev) => {
-      if (ev.target === imageModal) closeModal(imageModal)
-    })
-  }
-
-  if (sizeGuideModal && sizeGuideLinks.length) {
-    sizeGuideLinks.forEach(link => {
-      link.addEventListener('click', e => {
-        e.preventDefault()
-
-        openModal(sizeGuideModal)
-      })
-    })
-
-    if (sizeGuideClose) sizeGuideClose.addEventListener('click', () => closeModal(sizeGuideModal))
-
-    sizeGuideModal.addEventListener('click', e => {
-      if (e.target === sizeGuideModal) closeModal(sizeGuideModal)
-    })
+    if (imageModalImg) imageModalImg.classList.remove('zoomed')
   }
 
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape') closeAllModals()
   })
+
+  function formatPrice(value) {
+    if (typeof value === 'number') {
+      return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value)
+    }
+
+    if (typeof value === 'string' && value.trim().length > 0) return value
+
+    return ''
+  }
+
+  function renderProducts(products = []) {
+    if (!productGrid) return
+
+    productGrid.innerHTML = products.map(p => `
+      <article class="product-card" data-category="${p.category}">
+        <div class="product-image-wrapper" aria-hidden="true">
+          <img src="${p.image}" alt="${p.name}" class="product-image">
+        </div>
+        <div class="product-info">
+          <h3 class="product-name">${p.name}</h3>
+          <p class="product-category">${(p.category || '').charAt(0).toUpperCase() + (p.category || '').slice(1)}</p>
+          <p class="product-price">${formatPrice(p.price)}</p>
+          <a href="#" class="size-guide-link">Guia de Medidas</a>
+          <button class="button">Comprar agora</button>
+        </div>
+      </article>
+    `).join('')
+  }
+
+  function attachProductDelegation() {
+    // Filtragem por categoria (requer que existam .category-card no DOM)
+    const categoryCards = $$('.category-card')
+
+    if (categoryCards.length) {
+      const clearActive = () => categoryCards.forEach(c => c.classList.remove('active-category'))
+
+      categoryCards.forEach(card => {
+        card.addEventListener('click', e => {
+          e.preventDefault()
+
+          clearActive()
+
+          card.classList.add('active-category')
+
+          const selected = card.dataset.category
+          const allProducts = $$('.product-card')
+
+          allProducts.forEach(p => {
+            const cat = p.dataset.category
+
+            p.classList.toggle('hidden', !(selected === 'all' || selected === cat))
+          })
+
+          if (navMenu && navMenu.classList.contains('active')) closeMobileMenu()
+        })
+      })
+    }
+
+    if (!productGrid) return
+
+    productGrid.addEventListener('click', e => {
+      const productCard = e.target.closest('.product-card')
+      const addBtn = e.target.closest('.product-card .button')
+
+      if (addBtn && productCard) {
+        e.preventDefault()
+
+        const name = $('.product-name', productCard)?.textContent.trim() || 'produto'
+        const price = $('.product-price', productCard)?.textContent.trim() || ''
+
+        if (purchaseProductName) purchaseProductName.textContent = `${name} ${price}`
+
+        const whatsappText = encodeURIComponent(`Olá, gostaria de comprar: ${name} ${price}`)
+
+        if (purchaseWhatsapp) purchaseWhatsapp.href = `https://wa.me/5511910076475?text=${whatsappText}`
+        if (purchaseInstagram) purchaseInstagram.href = 'https://www.instagram.com/texshoes_/'
+
+        openModal(purchaseModal)
+
+        return
+      }
+
+      const sizeLink = e.target.closest('.size-guide-link')
+
+      if (sizeLink && productCard) {
+        e.preventDefault()
+
+        openModal(sizeGuideModal)
+
+        return
+      }
+
+      const imgWrap = e.target.closest('.product-image-wrapper')
+
+      if (imgWrap && productCard && imageModal && imageModalImg) {
+        const img = $('.product-image', imgWrap)
+
+        if (!img || !img.src) return
+
+        imageModalImg.src = img.src
+        imageModalImg.alt = img.alt || ''
+        imageModalImg.classList.remove('zoomed')
+
+        openModal(imageModal)
+
+        return
+      }
+    })
+  }
+
+  function setupModalControls() {
+    if (imageModal && imageModalImg) {
+      if (imageModalClose) imageModalClose.addEventListener('click', () => {
+        imageModalImg.classList.remove('zoomed')
+
+        closeModal(imageModal)
+      })
+
+      imageModalImg.addEventListener('click', e => {
+        e.stopPropagation()
+
+        imageModalImg.classList.toggle('zoomed')
+      })
+
+      imageModal.addEventListener('click', e => {
+        if (e.target === imageModal) {
+          imageModalImg.classList.remove('zoomed')
+
+          closeModal(imageModal)
+        }
+      })
+    }
+
+    if (sizeGuideModal) {
+      if (sizeGuideClose) sizeGuideClose.addEventListener('click', () => closeModal(sizeGuideModal))
+
+      sizeGuideModal.addEventListener('click', e => {
+        if (e.target === sizeGuideModal) closeModal(sizeGuideModal)
+      })
+    }
+
+    if (purchaseModal) {
+      if (purchaseClose) purchaseClose.addEventListener('click', () => closeModal(purchaseModal))
+
+      purchaseModal.addEventListener('click', e => {
+        if (e.target === purchaseModal) closeModal(purchaseModal)
+      })
+    }
+  }
+
+  try {
+    const resp = await fetch('src/stock.json')
+    const products = await resp.json()
+
+    renderProducts(products)
+    attachProductDelegation()
+    setupModalControls()
+
+  } catch (err) {
+    console.error('Erro carregando produtos:', err)
+  }
 })
