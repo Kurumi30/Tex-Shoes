@@ -230,7 +230,12 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   try {
     const resp = await fetch('src/stock.json')
+
+    if (!resp.ok) console.error('Verifique se o arquivo stock.json existe e está preenchido corretamente.')
+
     const products = await resp.json()
+
+    if (!products.length) throw new Error('Nenhum produto encontrado no estoque.')
 
     renderProducts(products)
     attachProductDelegation()
