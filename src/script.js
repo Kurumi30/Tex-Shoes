@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     productGrid.innerHTML = products.map(p => `
       <article class="product-card" data-category="${p.category}">
         <div class="product-image-wrapper" aria-hidden="true">
-          <img src="${p.image}" alt="${p.name}" class="product-image">
+          <img src="${p.image}" loading="lazy" alt="${p.name}" class="product-image">
         </div>
         <div class="product-info">
           <h3 class="product-name">${p.name}</h3>
