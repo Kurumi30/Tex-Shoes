@@ -162,18 +162,6 @@ ul {
   animation: float 3s ease-in-out infinite;
 }
 
-@keyframes float {
-
-  0%,
-  100% {
-    transform: translateY(0);
-  }
-
-  50% {
-    transform: translateY(-20px);
-  }
-}
-
 .products-section {
   padding: 80px 0;
 }
@@ -267,28 +255,6 @@ ul {
 
 .size-guide-link:hover {
     color: var(--accent-color);
-}
-
-.modal-close:focus {
-    color: #bbb;
-    text-decoration: none;
-}
-
-/* Estilos para o Modal da Tabela */
-.modal-content-table {
-    background-color: #fefefe;
-    padding: 20px 40px 30px 40px;
-    border-radius: 10px;
-    max-width: 500px;
-    width: 90%;
-    position: relative;
-    animation: zoomIn 0.4s ease;
-}
-
-.modal-content-table h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    color: var(--primary-color);
 }
 
 .size-table {
@@ -400,21 +366,6 @@ ul {
   font-size: 1.5rem;
 }
 
-#modal-image {
-  transition: transform 0.35s ease;
-  max-width: 90%;
-  max-height: 85vh;
-  cursor: zoom-in;
-  touch-action: pinch-zoom;
-}
-
-#modal-image.zoomed {
-  transform: scale(1.6);
-  cursor: zoom-out;
-  max-width: none;
-  max-height: none;
-}
-
 .policy-section {
   padding: 60px 0;
   background-color: var(--secondary-color);
@@ -440,28 +391,6 @@ ul {
   align-items: center;
 }
 
-/* texto introdutório */
-.contact-intro {
-  color: #666;
-  margin-bottom: 18px;
-  font-size: 0.98rem;
-}
-
-
-/* .form-input {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 15px;
-  border: 1px solid var(--light-gray);
-  border-radius: 5px;
-  font-size: 1rem;
-} */
-
-/* textarea.form-input {
-  resize: vertical;
-  min-height: 120px;
-} */
-
 .footer-section {
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -482,64 +411,6 @@ ul {
 
 .separator {
   margin: 0 10px;
-}
-
-.modal {
-  display: none;
-  /* Escondido por padrão */
-  position: fixed;
-  z-index: 2000;
-  /* Fica acima de todo o resto */
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  overflow: auto;
-  background-color: rgba(0, 0, 0, 0.85);
-  justify-content: center;
-  align-items: center;
-}
-
-.modal.active {
-  display: flex;
-  /* Usa flexbox para centralizar quando ativo */
-}
-
-.modal-content {
-  margin: auto;
-  display: block;
-  max-width: 80%;
-  max-height: 80vh;
-  animation: zoomIn 0.4s ease;
-}
-
-@keyframes zoomIn {
-  from {
-    transform: scale(0.5);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1);
-    opacity: 1;
-  }
-}
-
-.modal-close {
-  position: absolute;
-  top: 20px;
-  right: 35px;
-  color: #f1f1f1;
-  font-size: 40px;
-  font-weight: bold;
-  transition: 0.3s;
-  cursor: pointer;
-}
-
-.modal-close:hover,
-.modal-close:focus {
-  color: #bbb;
-  text-decoration: none;
 }
 
 .about-section {
@@ -593,60 +464,4 @@ ul {
 
 .about-values .fa-check-circle {
   color: var(--accent-color);
-}
-
-@media (max-width: 768px) {
-  .section-title {
-    font-size: 2rem;
-  }
-
-  .nav-menu {
-    position: fixed;
-    top: var(--header-height);
-    right: -100%;
-    width: 70%;
-    height: calc(100vh - var(--header-height));
-    background-color: var(--white);
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 40px;
-    transition: right 0.4s ease-in-out;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-  }
-
-  .nav-menu.active {
-    right: 0;
-  }
-
-  .nav-item {
-    font-size: 1.2rem;
-  }
-
-  #menu-toggle {
-    display: block;
-  }
-
-  /* esconder outros ícones no mobile */
-  /* .nav-actions .nav-icon:not(#menu-toggle) {
-    display: none;
-  } */
-
-  /* Hero Section */
-  .hero-content {
-    flex-direction: column-reverse;
-    text-align: center;
-  }
-
-  .hero-details .title {
-    font-size: 2.5rem;
-  }
-
-  .hero-image-wrapper {
-    max-width: 280px;
-  }
-
-  .contact-content {
-    flex-direction: column;
-  }
 }
