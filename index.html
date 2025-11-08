@@ -36,11 +36,21 @@
       </a>
 
       <ul class="nav-menu" id="nav-menu">
-        <li class="nav-item"><a href="#home" class="nav-link">Início</a></li>
-        <li class="nav-item"><a href="#about" class="nav-link">Sobre Nós</a></li>
-        <li class="nav-item"><a href="#categories" class="nav-link">Categorias</a></li>
-        <li class="nav-item"><a href="#featured" class="nav-link">Destaques</a></li>
-        <li class="nav-item"><a href="#contact" class="nav-link">Contato</a></li>
+        <li class="nav-item">
+          <a href="#home" class="nav-link">Início</a>
+        </li>
+        <li class="nav-item">
+          <a href="#about" class="nav-link">Sobre Nós</a>
+        </li>
+        <li class="nav-item">
+          <a href="#categories" class="nav-link">Categorias</a>
+        </li>
+        <li class="nav-item">
+          <a href="#featured" class="nav-link">Destaques</a>
+        </li>
+        <li class="nav-item">
+          <a href="#contact" class="nav-link">Contato</a>
+        </li>
       </ul>
 
       <div class="nav-actions">
@@ -48,18 +58,16 @@
         <i class="fas fa-user nav-icon"></i>
         <i class="fas fa-shopping-cart nav-icon"></i> -->
         <a href="https://wa.me/5511910076475" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-whatsapp">
-          </i>
+          <i class="fa-brands fa-whatsapp"></i>
         </a>
         <a href="https://www.instagram.com/texshoes_/" target="_blank" rel="noopener noreferrer">
-          <i class="fa-brands fa-instagram">
-          </i>
+          <i class="fa-brands fa-instagram"></i>
         </a>
         <a href="mailto:luizateixeira347@gmail.com">
-          <i class="fas fa-envelope">
-          </i>
+          <i class="fas fa-envelope"></i>
         </a>
-        <button id="menu-toggle" class="fas fa-bars nav-icon" aria-controls="nav-menu" aria-expanded="false" aria-label="Abrir menu"></button>
+        <button id="menu-toggle" class="fas fa-bars nav-icon" aria-controls="nav-menu" aria-expanded="false"
+          aria-label="Abrir menu"></button>
       </div>
     </nav>
   </header>
@@ -70,11 +78,14 @@
       <div class="section-content hero-content">
         <div class="hero-details">
           <h1 class="title">Estilo e Conforto a Cada Passo</h1>
+
           <p class="description">
             Descubra as últimas tendências em calçados e encontre o par perfeito para você.
           </p>
+
           <a href="#featured" class="button">Ver Coleção</a>
         </div>
+
         <div class="hero-image-wrapper">
           <img src="src/images/logo-without-bg.png" alt="Tênis em destaque" class="hero-image" />
         </div>
@@ -83,22 +94,35 @@
 
     <section class="about-section" id="about">
       <h2 class="section-title">Sobre a Tex Shoes</h2>
+
       <div class="section-content about-content">
         <div class="about-image-wrapper">
           <img src="src/images/logo.jpg" alt="Loja Tex Shoes" class="about-image" />
         </div>
+
         <div class="about-details">
           <h3 class="about-subtitle">Nossa História</h3>
+
           <p class="about-description">
             Somos uma loja on-line especializada em venda de tênis personalizada e especial. Na Tex Shoes, sua
             satisfação é nossa <b>PRIORIDADE</b>
           </p>
+
           <h3 class="about-subtitle">Nossos Valores</h3>
+
           <ul class="about-values">
-            <li><i class="fas fa-check-circle"></i> Conforto</li>
-            <li><i class="fas fa-check-circle"></i> Qualidade</li>
-            <li><i class="fas fa-check-circle"></i> Atendimento diferenciado</li>
-            <li><i class="fas fa-check-circle"></i> Envio rápido para todos os nossos clientes</li>
+            <li>
+              <i class="fas fa-check-circle"></i> Conforto
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Qualidade
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Atendimento diferenciado
+            </li>
+            <li>
+              <i class="fas fa-check-circle"></i> Envio rápido para todos os nossos clientes
+            </li>
           </ul>
         </div>
       </div>
@@ -147,6 +171,7 @@
     <!-- Seção de Produtos em Destaque -->
     <section class="products-section" id="featured">
       <h2 class="section-title">Nossos Destaques</h2>
+
       <div class="section-content product-grid">
         <!-- Os produtos serão renderizados através do JavaScript -->
       </div>
@@ -156,6 +181,7 @@
 
     <section class="policy-section" id="policy">
       <h2 class="section-title">Política Da Loja</h2>
+
       <div class="section-content policy-content">
         <h3>FORMA DE TRABALHO</h3>
         <p>Apenas sob encomenda. Não possuímos estoque.</p>
@@ -168,11 +194,14 @@
     <!-- Seção de Contato -->
     <section class="contact-section" id="contact">
       <h2 class="section-title">Fale Conosco</h2>
+
       <div class="section-content contact-content">
         <div class="contact-info">
           <!-- <h3>Informações de Contato</h3> -->
           <!-- <p><i class="fas fa-map-marker-alt"></i> Rua Fictícia, 123, Cidade, BR</p> -->
-          <p><i class="fas fa-map-marker-alt"></i> Vendas somente online</p>
+          <p>
+            <i class="fas fa-map-marker-alt"></i> Vendas somente online
+          </p>
           <p>
             <i class="fas fa-envelope"></i> <a href="mailto:luizateixeira347@gmail.com">luizateixeira347@gmail.com</a>
           </p>
@@ -207,13 +236,16 @@
 
   <div id="image-modal" class="modal">
     <span class="modal-close">&times;</span>
+
     <img class="modal-content" id="modal-image" loading="lazy">
   </div>
 
   <div id="size-guide-modal" class="modal">
     <div class="modal-content-table">
       <span class="modal-close size-guide-close">&times;</span>
+
       <h2>Guia de Medidas</h2>
+
       <table class="size-table">
         <thead>
           <tr>
@@ -281,13 +313,15 @@
   <div id="purchase-modal" class="modal" aria-hidden="true">
     <div class="modal-content-table">
       <span class="modal-close purchase-close">&times;</span>
+
       <h2>Como deseja comprar?</h2>
-      <p id="purchase-product-name"
-        style="text-align:center;margin-top:8px;color:var(--primary-color);font-weight:600;"></p>
-      <div style="display:flex;gap:12px;justify-content:center;margin-top:18px;">
+
+      <p id="purchase-product-name"></p>
+      <div class="button-container">
         <a id="purchase-whatsapp" class="button" href="#" target="_blank" rel="noopener noreferrer">
           <i class="fa-brands fa-whatsapp" style="margin-right:8px"></i> WhatsApp
         </a>
+        
         <a id="purchase-instagram" class="button" href="https://www.instagram.com/texshoes_/" target="_blank"
           rel="noopener noreferrer">
           <i class="fa-brands fa-instagram" style="margin-right:8px"></i> Instagram
