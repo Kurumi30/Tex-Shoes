@@ -34,6 +34,7 @@ document.addEventListener('DOMContentLoaded', async () => {
   const purchaseClose = purchaseModal ? $('.purchase-close', purchaseModal) : null
 
   const productGrid = $('.product-grid')
+  const PAGE_SIZE = 8
 
   const setMenuIcons = open => {
     if (!menuToggle) return
@@ -88,10 +89,8 @@ document.addEventListener('DOMContentLoaded', async () => {
     return ''
   }
 
-  function renderProducts(products = []) {
-    if (!productGrid) return
-
-    productGrid.innerHTML = products.map(p => `
+  function renderProductCards(items = []) {
+    return items.map(p => `
       <article class="product-card" data-category="${p.category}">
         <div class="product-image-wrapper" aria-hidden="true">
           <img src="${p.image}" loading="lazy" alt="${p.name}" class="product-image">
@@ -107,6 +106,68 @@ document.addEventListener('DOMContentLoaded', async () => {
     `).join('')
   }
 
+  let currentPage = 1
+  let allProducts = []
+  let selectedCategory = 'all'
+  let currentFiltered = []
+
+  function renderProductsPage(page = 1, append = false) {
+    if (!productGrid) return
+
+    if (!allProducts.length) {
+      productGrid.innerHTML = '<p class="no-products" style="text-align:center;">Nenhum produto disponível.</p>'
+      currentFiltered = []
+      updateLoadMoreButton()
+      return
+    }
+
+    // filtra conforme categoria selecionada
+    currentFiltered = selectedCategory === 'all'
+      ? allProducts
+      : allProducts.filter(p => p.category === selectedCategory)
+
+    const start = (page - 1) * PAGE_SIZE
+    const slice = currentFiltered.slice(start, start + PAGE_SIZE)
+
+    if (!slice.length && page === 1) {
+      productGrid.innerHTML = '<p class="no-products" style="text-align:center;">Nenhum produto encontrado nessa categoria.</p>'
+    } else if (append) {
+      productGrid.insertAdjacentHTML('beforeend', renderProductCards(slice))
+    } else {
+      productGrid.innerHTML = renderProductCards(slice)
+    }
+
+    updateLoadMoreButton()
+  }
+
+  function updateLoadMoreButton() {
+    if (!productGrid) return
+
+    const existingBtn = document.getElementById('load-more-btn')
+    const total = Array.isArray(currentFiltered) ? currentFiltered.length : (allProducts.length || 0)
+    const loaded = currentPage * PAGE_SIZE
+    const hasMore = loaded < total
+
+    if (hasMore) {
+      if (!existingBtn) {
+        const btn = document.createElement('button')
+
+        btn.id = 'load-more-btn'
+        btn.className = 'button'
+        btn.textContent = 'Ver mais'
+        btn.style.display = 'block'
+        btn.style.margin = '30px auto 0'
+        btn.addEventListener('click', () => {
+          currentPage++
+          renderProductsPage(currentPage, true)
+        })
+        productGrid.parentNode.appendChild(btn)
+      }
+    } else {
+      if (existingBtn) existingBtn.remove()
+    }
+  }
+
   function attachProductDelegation() {
     // Filtragem por categoria (requer que existam .category-card no DOM)
     const categoryCards = $$('.category-card')
@@ -119,17 +180,11 @@ document.addEventListener('DOMContentLoaded', async () => {
           e.preventDefault()
 
           clearActive()
-
           card.classList.add('active-category')
 
-          const selected = card.dataset.category
-          const allProducts = $$('.product-card')
-
-          allProducts.forEach(p => {
-            const cat = p.dataset.category
-
-            p.classList.toggle('hidden', !(selected === 'all' || selected === cat))
-          })
+          selectedCategory = card.dataset.category || 'all'
+          currentPage = 1
+          renderProductsPage(currentPage, false)
 
           if (navMenu && navMenu.classList.contains('active')) closeMobileMenu()
         })
@@ -237,10 +292,13 @@ document.addEventListener('DOMContentLoaded', async () => {
 
     if (!products.length) throw new Error('Nenhum produto encontrado no estoque.')
 
-    renderProducts(products)
+    allProducts = products
+    currentPage = 1
+    selectedCategory = 'all'
+
+    renderProductsPage(currentPage)
     attachProductDelegation()
     setupModalControls()
-
   } catch (err) {
     console.error('Erro carregando produtos:', err)
   }
