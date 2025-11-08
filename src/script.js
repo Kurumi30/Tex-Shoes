@@ -80,10 +80,8 @@ document.addEventListener('DOMContentLoaded', async () => {
   })
 
   function formatPrice(value) {
-    if (typeof value === 'number') {
-      return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value)
-    }
-
+    if (typeof value === 'number') return new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value)
+  
     if (typeof value === 'string' && value.trim().length > 0) return value
 
     return ''
@@ -159,6 +157,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         btn.style.margin = '30px auto 0'
         btn.addEventListener('click', () => {
           currentPage++
+          
           renderProductsPage(currentPage, true)
         })
         productGrid.parentNode.appendChild(btn)
