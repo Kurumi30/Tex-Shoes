@@ -157,7 +157,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         btn.style.margin = '30px auto 0'
         btn.addEventListener('click', () => {
           currentPage++
-          
+
           renderProductsPage(currentPage, true)
         })
         productGrid.parentNode.appendChild(btn)
