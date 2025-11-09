@@ -468,9 +468,24 @@ ul {
   color: var(--accent-color);
 }
 
-/* Ajusta as delivery-cards quando estão dentro da tabela (mantém estilo existente) */
 .contact-table .delivery-cards {
-  justify-content: flex-start;
-  gap: 10px;
+  display: flex;
+  gap: 12px;
   margin-top: 6px;
+  align-items: flex-start;
+}
+
+.contact-table .delivery-cards .delivery-card {
+  position: relative;
+  padding-left: 44px;
+  margin-bottom: 8px;
+  text-align: left;
+}
+
+.contact-table .delivery-cards .delivery-card i {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  font-size: 1.1rem;
+  color: var(--accent-color);
 }
