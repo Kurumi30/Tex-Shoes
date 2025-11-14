@@ -116,6 +116,7 @@ document.addEventListener('DOMContentLoaded', async () => {
       productGrid.innerHTML = '<p class="no-products" style="text-align:center;">Nenhum produto disponível.</p>'
       currentFiltered = []
       updateLoadMoreButton()
+      
       return
     }
 
