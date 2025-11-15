@@ -29,14 +29,14 @@
   },
   {
     "id": 18,
-    "name": " Air Jordan 1 Low Shadow Toe",
+    "name": "Air Jordan 1 Low Shadow Toe",
     "category": "casual",
     "price": 259.99,
     "image": "src/images/model-18.jpg"
   },
   {
     "id": 19,
-    "name": " Air Jordan 1 Low Chicago Flip",
+    "name": "Air Jordan 1 Low Chicago Flip",
     "category": "casual",
     "price": 259.90,
     "image": "src/images/model-19.jpg"
@@ -50,7 +50,7 @@
   },
   {
     "id": 21,
-    "name": " Nike Air Max Dn X Light Smoke Grey",
+    "name": "Nike Air Max Dn X Light Smoke Grey",
     "category": "esportivo",
     "price": 449.99,
     "image": "src/images/model-21.jpg"
@@ -64,21 +64,21 @@
   },
   {
     "id": 23,
-    "name": " Air Jordan 1 Mid SE Black Grey",
+    "name": "Air Jordan 1 Mid SE Black Grey",
     "category": "casual",
     "price": 259.99,
     "image": "src/images/model-23.jpg"
   },
   {
     "id": 24,
-    "name": " Nike Air Force 1 Low Black White",
+    "name": "Nike Air Force 1 Low Black White",
     "category": "casual",
     "price": 259.90,
     "image": "src/images/model-24.jpg"
   },
   {
     "id": 25,
-    "name": " Nike Dunk Low Medium Olive",
+    "name": "Nike Dunk Low Medium Olive",
     "category": "casual",
     "price": 259.99,
     "image": "src/images/model-25.jpg"
@@ -92,7 +92,7 @@
   },
   {
     "id": 27,
-    "name": " Nike Air Max Dn X Light Smoke Grey",
+    "name": "Nike Air Max Dn X Light Smoke Grey",
     "category": "casual",
     "price": 549.99,
     "image": "src/images/model-27.jpg"
@@ -113,7 +113,7 @@
   },
   {
     "id": 30,
-    "name": " Air Jordan 1 Mid SE Black Grey",
+    "name": "Air Jordan 1 Mid SE Black Grey",
     "category": "esportivo",
     "price": 299.99,
     "image": "src/images/model-30.jpg"
@@ -134,8 +134,7 @@
   },
   {
     "id": 33,
-    "name": "Nike SB Dunk Low Black"
-    ,
+    "name": "Nike SB Dunk Low Black",
     "category": "casual",
     "price": 259.99,
     "image": "src/images/model-33.jpg"
@@ -170,7 +169,7 @@
   },
   {
     "id": 38,
-    "name": " Nike Air Force 1 Low Wolf Grey",
+    "name": "Nike Air Force 1 Low Wolf Grey",
     "category": "esportivo",
     "price": 279.99,
     "image": "src/images/model-38.jpg"
@@ -191,14 +190,14 @@
   },
   {
     "id": 41,
-    "name": " Nike Court Borough Low 2",
+    "name": "Nike Court Borough Low 2",
     "category": "casual",
     "price": 259.99,
     "image": "src/images/model-41.jpg"
   },
   {
     "id": 42,
-    "name": " Air Jordan 1 Low Travis Scott x OG",
+    "name": "Air Jordan 1 Low Travis Scott x OG",
     "category": "casual",
     "price": 299.99,
     "image": "src/images/model-42.jpg"
@@ -261,7 +260,7 @@
   },
   {
     "id": 51,
-    "name": " Nike Court Borough Low 2",
+    "name": "Nike Court Borough Low 2",
     "category": "casual",
     "price": 259.99,
     "image": "src/images/model-51.jpg"
@@ -282,7 +281,7 @@
   },
   {
     "id": 54,
-    "name": " New Balance 9060",
+    "name": "New Balance 9060",
     "category": "esportivo",
     "price": 349.99,
     "image": "src/images/model-54.jpg"
@@ -303,7 +302,7 @@
   },
   {
     "id": 57,
-    "name": " Nike Court Borough Low 2",
+    "name": "Nike Court Borough Low 2",
     "category": "casual",
     "price": 259.99,
     "image": "src/images/model-57.jpg"
@@ -324,7 +323,7 @@
   },
   {
     "id": 60,
-    "name": " New Balance 9060",
+    "name": "New Balance 9060",
     "category": "esportivo",
     "price": 349.99,
     "image": "src/images/model-60.jpg"
@@ -345,7 +344,7 @@
   },
   {
     "id": 63,
-    "name": " Ambush x Nike Air Force 1 Low Black",
+    "name": "Ambush x Nike Air Force 1 Low Black",
     "category": "casual",
     "price": 649.99,
     "image": "src/images/model-63.jpg"
@@ -401,7 +400,7 @@
   },
   {
     "id": 71,
-    "name": " Ambush x Nike Air Force 1 Low Black",
+    "name": "Ambush x Nike Air Force 1 Low Black",
     "category": "casual",
     "price": 649.99,
     "image": "src/images/model-71.jpg"
@@ -436,14 +435,14 @@
   },
   {
     "id": 76,
-    "name": " Ambush x Nike Air Force 1 Low Black",
+    "name": "Ambush x Nike Air Force 1 Low Black",
     "category": "esportivo",
     "price": 649.99,
     "image": "src/images/model-76.jpg"
   },
   {
     "id": 77,
-    "name": " Air Jordan 4 Retro Military Black",
+    "name": "Air Jordan 4 Retro Military Black",
     "category": "casual",
     "price": 299.99,
     "image": "src/images/model-77.jpg"
@@ -457,21 +456,21 @@
   },
   {
     "id": 79,
-    "name": " Ambush x Nike Air Force 1 Low White",
+    "name": "Ambush x Nike Air Force 1 Low White",
     "category": "casual",
     "price": 649.99,
     "image": "src/images/model-79.jpg"
   },
   {
     "id": 80,
-    "name": " Air Jordan 4 Retro Military Black",
+    "name": "Air Jordan 4 Retro Military Black",
     "category": "esportivo",
     "price": 299.99,
     "image": "src/images/model-80.jpg"
   },
   {
     "id": 81,
-    "name": " Ambush x Nike Air Force 1 Low Panda",
+    "name": "Ambush x Nike Air Force 1 Low Panda",
     "category": "casual",
     "price": 349.99,
     "image": "src/images/model-81.jpg"
@@ -499,21 +498,21 @@
   },
   {
     "id": 85,
-    "name": " Ambush x Nike Air Force 1 Low Panda",
+    "name": "Ambush x Nike Air Force 1 Low Panda",
     "category": "casual",
     "price": 649.99,
     "image": "src/images/model-85.jpg"
   },
   {
     "id": 86,
-    "name": " Ambush x Nike Air Force 1 Low White",
+    "name": "Ambush x Nike Air Force 1 Low White",
     "category": "esportivo",
     "price": 649.99,
     "image": "src/images/model-86.jpg"
   },
   {
     "id": 87,
-    "name": " Ambush x Nike Air Force 1 Low Black",
+    "name": "Ambush x Nike Air Force 1 Low Black",
     "category": "casual",
     "price": 649.99,
     "image": "src/images/model-87.jpg"
@@ -527,14 +526,14 @@
   },
   {
     "id": 89,
-    "name": " New Balance 9060",
+    "name": "New Balance 9060",
     "category": "casual",
     "price": 349.99,
     "image": "src/images/model-89.jpg"
   },
   {
     "id": 90,
-    "name": " Air Jordan 1 Low Travis Scott x Fragment",
+    "name": "Air Jordan 1 Low Travis Scott x Fragment",
     "category": "esportivo",
     "price": 299.99,
     "image": "src/images/model-90.jpg"
@@ -548,7 +547,7 @@
   },
   {
     "id": 92,
-    "name": "Tênis  Vans Hylane Tri-Tone Grey Blue",
+    "name": "Tênis Vans Hylane Tri-Tone Grey Blue",
     "category": "esportivo",
     "price": 279.99,
     "image": "src/images/model-92.jpg"
@@ -646,7 +645,7 @@
   },
   {
     "id": 106,
-    "name": " New Balance 9060 Blue",
+    "name": "New Balance 9060 Blue",
     "category": "esportivo",
     "price": 349.99,
     "image": "src/images/model-106.jpg"
@@ -751,7 +750,7 @@
   },
   {
     "id": 121,
-    "name": " New Balance 9060 White",
+    "name": "New Balance 9060 White",
     "category": "casual",
     "price": 349.99,
     "image": "src/images/model-121.jpg"
@@ -793,14 +792,14 @@
   },
   {
     "id": 127,
-    "name": " New Balance 9060 White",
+    "name": "New Balance 9060 White",
     "category": "casual",
     "price": 179.90,
     "image": "src/images/model-127.jpg"
   },
   {
     "id": 128,
-    "name": " New Balance 9060 Grey",
+    "name": "New Balance 9060 Grey",
     "category": "esportivo",
     "price": 259.90,
     "image": "src/images/model-128.jpg"
@@ -842,14 +841,14 @@
   },
   {
     "id": 134,
-    "name": " New Balance 9060",
+    "name": "New Balance 9060",
     "category": "esportivo",
     "price": 229.90,
     "image": "src/images/model-134.jpg"
   },
   {
     "id": 135,
-    "name": " Nike Air Force 1 Low Wolf Grey",
+    "name": "Nike Air Force 1 Low Wolf Grey",
     "category": "casual",
     "price": 179.90,
     "image": "src/images/model-135.jpg"
@@ -898,7 +897,7 @@
   },
   {
     "id": 142,
-    "name": " Adidas ADI2000",
+    "name": "Adidas ADI2000",
     "category": "esportivo",
     "price": 259.90,
     "image": "src/images/model-142.jpg"
@@ -982,7 +981,7 @@
   },
   {
     "id": 154,
-    "name": " Adidas ADI2000",
+    "name": "Adidas ADI2000",
     "category": "esportivo",
     "price": 279.90,
     "image": "src/images/model-154.jpg"
