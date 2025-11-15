@@ -2,8 +2,8 @@
 
 ## 📖 Sobre o Projeto
 
-> Este é um projeto desenvolvido para a disciplina **Projeto de Extensão em Criação de Sistemas**, do curso de Análise e Desenvolvimento de Sistemas, ministrada pelo professor Daniel Ferreira. Foi construído utilizando apenas HTML, CSS e JavaScript vanilla, sem o uso de frameworks ou bibliotecas externas.
-> O objetivo do projeto deve atender a uma demanda real. No caso, foi escolhido o tema ```Projeto Profissional``` para uma loja online de calçados.
+Este é um projeto desenvolvido para a disciplina **Projeto de Extensão em Criação de Sistemas**, do curso de Análise e Desenvolvimento de Sistemas, ministrada pelo professor Daniel Ferreira. Foi construído utilizando apenas HTML, CSS e JavaScript vanilla, sem o uso de frameworks ou bibliotecas externas.
+O objetivo do projeto deve atender a uma demanda real. No caso, foi escolhido o tema ```Projeto Profissional``` para uma loja online de calçados.
 
 ## 🤝 Colaboradores
 
@@ -84,7 +84,7 @@ Exemplo com Python:
 python -m http.server 5500
 ```
 
-- Observação: Não abra via **file://**, porque costuma bloquear o fetch de arquivos locais por questões de segurança do navegador, por isso é recomendado usar um servidor local.
+> - Observação: Não abra via **file://**, porque costuma bloquear o fetch de arquivos locais por questões de segurança do navegador, por isso é recomendado usar um servidor local.
 
 ## 📫 Contribuindo
 
@@ -98,7 +98,7 @@ Para contribuir com o projeto, siga estas etapas:
 
 ## 📝 Licença
 
-Projeto licenciado sob MIT [![Licença](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Kurumi30/Tex-Shoes/blob/main/LICENSE).
+Projeto licenciado sob MIT [![Licença](https://img.shields.io/badge/license-MIT-blue)](https://github.com/Kurumi30/Tex-Shoes/blob/main/LICENSE)
 
 <hr/>
 
